@@ -1,4 +1,72 @@
 body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: hsl(0, 0%, 0%);
+  background-color: hsl(240, 100%, 12%);
+}
+header,
+footer {
+  background-color: hsl(240, 100%, 12%);
+  text-align: center;
+  padding: 1em;
+  color: #fff;
+}
+header h1 {
+  margin: 0.2em 0;
+  font-size: 20vh;
+  background: -webkit-linear-gradient(
+    hsl(45, 100%, 50%),
+    hsl(170, 89%, 49%),
+    hsl(203, 73%, 26%),
+    hsl(213, 69%, 10%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Libre Baskerville", serif;
+}
+h1 {
+  font-size: 72px;
+}
+main {
+  padding: 2em;
+  max-width: 960px;
+  margin: 0 auto;
+  color: white;
+  background-color: hsl(240, 100%, 12%);
+}
+section {
+  margin-bottom: 2em;
+}
+.project {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #003366;
+  padding-bottom: 1em;
+}
+.project img {
+  max-width: 50%;
+  height: auto;
+  padding: 4px;
+  background-color: #f8f8f8;
+}
+a {
+  color: hsl(200, 100%, 50%);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+.contact-info p,
+.contact-info a {
+  font-size: 1em;
+}
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+body {
     font-family: Arial, sans-serif;
 }
 
