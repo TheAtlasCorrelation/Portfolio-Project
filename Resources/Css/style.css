@@ -16,10 +16,10 @@ header h1 {
   margin: 0.2em 0;
   font-size: 20vh;
   background: -webkit-linear-gradient(
-    hsl(45, 100%, 50%),
-    hsl(170, 89%, 49%),
-    hsl(203, 73%, 26%),
-    hsl(213, 69%, 10%)
+    hsl(50, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(200, 80%, 30%),
+    hsl(240, 10%, 10%)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
