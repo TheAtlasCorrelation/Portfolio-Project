@@ -3,62 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Project</title>
+    <meta name="description" content="Professional Portfolio of Ewan Mbale – freelance web designer and developer." />
+    <title>Portfolio Project - Ewan Mbale</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        line-height: 1.6;
+        color: #e0e0e0;
+        background: linear-gradient(135deg, #001f3f,)
+      }
+      header,
+      footer {
+        background-color: #003366;
+        text-align: center;
+        padding: 1em;
+        color: #fff;
+      }
+      header h1 {
+        margin: 0.2em 0;
+        font-size: 2em;
+        color: #FFA500;
+      }
+      main {
+        padding: 2em;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      section {
+        margin-bottom: 2em;
+      }
+      .project {
+        margin-bottom: 2em;
+        border-bottom: 1px solid #003366;
+        padding-bottom: 1em;
+      }
+      .project img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        padding: 4px;
+        background-color: #f8f8f8;
+      }
+      a {
+        color: #FFA500;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .contact-info p,
+      .contact-info a {
+        font-size: 1em;
+      }
+      footer p {
+        margin: 0;
+        font-size: 0.9em;
+      }
+    </style>
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Portfolio Project</h1>
       <p>
-        Hey there I am a website creator with different unique features and
-        designs. I'm here to help you create your own website.<br />
-        I specialize in creating engaging and visually appealing websites that
-        meet your unique needs. Feel free to reach out if<br />
-        you have any questions or need assistance with your website design. My
-        name is Ewan and I am a freelance web designer and developer.<br />
-        I'm always here to help you create your perfect website!
+        Welcome to my professional portfolio. I am Ewan Mbale, a freelance web designer and developer specializing in crafting modern, user-centric websites. Explore my work and feel free to get in touch to discuss potential collaborations.
       </p>
     </header>
     <main>
       <section>
-        <h3>Skills and Experiences</h3>
+        <h2>Skills &amp; Experiences</h2>
         <p>
           <strong>Languages:</strong> HTML, CSS, JavaScript, Python<br />
-          <strong>Tools:</strong>Figma, Visual Studio Code<br />
-          <strong>Experience:</strong> 3+ years as a web designer and developer
+          <strong>Tools:</strong> Figma, Visual Studio Code<br />
+          <strong>Experience:</strong> Over 3 years in web design and development
         </p>
-        <h4>Recent Projects</h4>
+        <h3>Recent Projects</h3>
         <div class="project">
-          <img src="https://via.placeholder.com/300x200" alt="Project 1" />
-          <a href="https://theatlascorrelation.github.io/Responsive-club/">View Project</a>
-          <h5>Responsive Club</h5>
-          <p>A golf website for people to join our courses.</p>
+          <img src="https://via.placeholder.com/300x200" alt="Responsive Club Project Preview" />
+          <h4>Responsive Club</h4>
+          <p>A comprehensive website offering golfing courses and membership details.</p>
+          <a href="https://theatlascorrelation.github.io/Responsive-club/" target="_blank" rel="noopener">View Project</a>
         </div>
         <div class="project">
-          <img src="https://via.placeholder.com/300x200" alt="Project 1" />
-          <a href="https://theatlascorrelation.github.io/Responsive-club/">View Project</a>
-          <h5>Web Design System</h5>
-          <p>
-            Examples of typography, colours and buttons for you to use on your
-            website.
-          </p>
+          <img src="https://via.placeholder.com/300x200" alt="Design System Preview" />
+          <h4>Design System</h4>
+          <p>An extensive system showcasing typography, color schemes, and UI components.</p>
+          <a href="https://theatlascorrelation.github.io/Responsive-club/" target="_blank" rel="noopener">View Project</a>
         </div>
         <div class="project">
-          <img src="https://via.placeholder.com/300x200" alt="Project 1" />
-          <a href="https://theatlascorrelation.github.io/Responsive-club/">View Project</a>
-          <h5>Company Homepage</h5>
-          <p>A lovely example of simple website</p>
+          <img src="https://via.placeholder.com/300x200" alt="Corporate Homepage Preview" />
+          <h4>Corporate Homepage</h4>
+          <p>A streamlined, professional website designed for effective compay branding.</p>
+          <a href="https://theatlascorrelation.github.io/Responsive-club/" target="_blank" rel="noopener">View Project</a>
         </div>
       </section>
-      <section>
-        <h3>Contact Information</h3>
+      <section class="contact-info">
+        <h2>Contact Information</h2>
         <p>
-          <strong>Email:</strong> <a href="mailto:ewan.mbale@example.com">alphacentaurus706@gmail.com</a><br />
+          <strong>Email:</strong> <a href="mailto:ewan.mbale@example.com">ewan.mbale@example.com</a><br />
           <strong>Phone:</strong> +27 79 123 4567<br />
           <strong>Address:</strong> 123 Main Street, Bradford, England
         </p>
       </section>
-      <footer>
-        2025 Portfolio Project. All rights reserved.
-      </footer>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2025 Portfolio Project. All rights reserved.</p>
+    </footer>
   </body>
 </html>
