@@ -30,7 +30,10 @@ a:hover {
     background-color: #f8f9fa;
     padding: 20px;
 }
-
+.header-title {
+    font-size: 10vh;
+    font-weight: bold;
+}
 .main {
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +47,6 @@ a:hover {
     padding: 20px;
 }
 
-/* CSS for contact information */
 .contact-info {
     margin-top: 40px;
 }

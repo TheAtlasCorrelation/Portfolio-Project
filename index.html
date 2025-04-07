@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Professional Portfolio of Ewan Mbale - freelance web designer and developer." />
+    <meta
+      name="description"
+      content="Professional Portfolio of Ewan Mbale - freelance web designer and developer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Portfolio Project</title>
     <style>
       body {
@@ -11,7 +22,7 @@
         margin: 0;
         line-height: 1.6;
         color: hsl(0, 0%, 0%);
-        background-color:  hsl(240, 100%, 12%)
+        background-color: hsl(240, 100%, 12%);
       }
       header,
       footer {
@@ -22,15 +33,26 @@
       }
       header h1 {
         margin: 0.2em 0;
-        font-size: 2em;
-        color: hsl(200, 100%, 50%);
+        font-size: 20vh;
+        background: -webkit-linear-gradient(
+          hsl(45, 100%, 50%),
+          hsl(170, 89%, 49%),
+          hsl(203, 73%, 26%),
+          hsl(213, 69%, 10%)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Libre Baskerville", serif;
+      }
+      h1 {
+        font-size: 72px;
       }
       main {
         padding: 2em;
         max-width: 960px;
         margin: 0 auto;
         color: white;
-        background-color:  hsl(240, 100%, 12%);
+        background-color: hsl(240, 100%, 12%);
       }
       section {
         margin-bottom: 2em;
@@ -66,9 +88,12 @@
   </head>
   <body>
     <header class="header">
-      <h1>Portfolio Project</h1>
+      <h1 class="header-title">Portfolio Project</h1>
       <p>
-        Welcome to my professional portfolio. I am Ewan Mbale, a freelance web designer and developer specializing in crafting modern, user-centric websites. Explore my work and feel free to get in touch to discuss potential collaborations.
+        Welcome to my professional portfolio. I am Ewan Mbale, a freelance web
+        designer and developer specializing in crafting modern, user-centric
+        websites. Explore my work and feel free to get in touch to discuss
+        potential collaborations.
       </p>
     </header>
     <main>
@@ -77,33 +102,70 @@
         <p>
           <strong>Languages:</strong> HTML, CSS, JavaScript, Python<br />
           <strong>Tools:</strong> Figma, Visual Studio Code<br />
-          <strong>Experience:</strong> Over 3 years in web design and development
+          <strong>Experience:</strong> Over 3 years in web design and
+          development
         </p>
         <h3>Recent Projects</h3>
         <div class="project">
-          <img class="img-2" src="./Resources/Images/Image-1.png" alt="Design System Preview" />
+          <img
+            class="img-2"
+            src="./Resources/Images/Image-1.png"
+            alt="Design System Preview"
+          />
           <h4>Design System</h4>
-          <p>An extensive system showcasing typography, color schemes, and UI components.</p>
-          <a href="https://theatlascorrelation.github.io/Style-Guide/" target="_blank" rel="noopener">View Project</a>
+          <p>
+            An extensive system showcasing typography, color schemes, and UI
+            components.
+          </p>
+          <a
+            href="https://theatlascorrelation.github.io/Style-Guide/"
+            target="_blank"
+            rel="noopener"
+            >View Project</a
+          >
         </div>
         <div class="project">
-          <img src="./Resources/Images/Image-2.png" alt="Responsive Club Project Preview" />
+          <img
+            src="./Resources/Images/Image-2.png"
+            alt="Responsive Club Project Preview"
+          />
           <h4>Responsive Club</h4>
-          <p>A comprehensive website offering golfing courses and membership details.</p>
-          <a href="https://theatlascorrelation.github.io/Responsive-club/" target="_blank" rel="noopener">View Project</a>
+          <p>
+            A comprehensive website offering golfing courses and membership
+            details.
+          </p>
+          <a
+            href="https://theatlascorrelation.github.io/Responsive-club/"
+            target="_blank"
+            rel="noopener"
+            >View Project</a
+          >
         </div>
         <div class="project">
-          <img src="./Resources/Images/Image-3.png" alt="Interactive Game Preview" />
+          <img
+            src="./Resources/Images/Image-3.png"
+            alt="Interactive Game Preview"
+          />
           <h4>Dekta Strings</h4>
-          <p>A harmonious string quartet playing songs full of warmth and sweetness.</p>
-          <a href="https://theatlascorrelation.github.io/Delta-Strings/" target="_blank" rel="noopener">View Project</a>
+          <p>
+            A harmonious string quartet playing songs full of warmth and
+            sweetness.
+          </p>
+          <a
+            href="https://theatlascorrelation.github.io/Delta-Strings/"
+            target="_blank"
+            rel="noopener"
+            >View Project</a
+          >
         </div>
-
       </section>
       <section class="contact-info">
         <h2>Contact Information</h2>
         <p>
-          <strong>Email:</strong> <a href="mailto:alphacentaurus706@gmail.com">alphacentaurus706@gmail.com</a><br />
+          <strong>Email:</strong>
+          <a href="mailto:alphacentaurus706@gmail.com"
+            >alphacentaurus706@gmail.com</a
+          ><br />
           <strong>Phone:</strong> +27 79 123 4567<br />
           <strong>Address:</strong> 123 Main Street, Bradford, England
         </p>
