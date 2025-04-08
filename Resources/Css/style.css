@@ -73,6 +73,7 @@ a:hover {
 .contact-info p,
 .contact-info a {
   font-size: 1em;
+  text-align: center;
 }
 
 footer p {
@@ -133,6 +134,8 @@ a:hover {
 
 .contact-info {
   margin-top: 40px;
+  text-align: center;
+
 }
 
 .contact-info p {
@@ -182,6 +185,7 @@ a:hover {
 
   .contact-info {
     margin-top: 40px;
+    text-align: center;
   }
 
   .contact-info p {
