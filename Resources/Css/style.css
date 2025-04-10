@@ -11,6 +11,7 @@ footer {
   text-align: center;
   padding: 1em;
   color: hsl(35, 100%, 20%);
+  background-color: hsl(180, 100%, 50%);
 }
 
 
@@ -163,43 +164,16 @@ a:hover {
   height: 20px;
 }
 
-footer p {
-  margin: 0;
-  font-size: 0.9em;
-}
-input[type="text"],
-select,
-textarea {
-  width: 80%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type="submit"] {
-  background-color: #04aa6d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-.container {
-  color: black;
-  margin-left: 55vh;
-  border-radius: 5px;
-  background-color: #f2f2f2;
+.footer {
+  background-color: #f8f9fa;
   padding: 20px;
-  width: 77vh;
+  text-align: center;
 }
+
+.footer p {
+  margin: 0;
+}
+
 
 @media (max-width: 768px) {
 
@@ -254,6 +228,36 @@ input[type="submit"]:hover {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+.header,
+.footer {
+  text-align: center;
+}
+
+.header h1 {
+
+  font-size: 3em;
+}
+
+.header p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project a {
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-info p {
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
