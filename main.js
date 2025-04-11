@@ -27,5 +27,10 @@ navLinks.forEach((link) => {
         behavior: "smooth",
       });
     }
+
+    navLinks.forEach((otherLink) => {
+      otherLink.classList.remove("active");
+    });
+    link.classList.add("active");
   });
 });
