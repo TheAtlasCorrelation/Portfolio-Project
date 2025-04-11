@@ -1,52 +1,31 @@
-const toggleButton = document.querySelector('.toggle-button');
-if (toggleButton) {
-  toggleButton.addEventListener('click', () => {
-    const body = document.querySelector('body');
-    if (body) {
-      
-      const slideshowImages = document.querySelectorAll('.slideshow-image');
-      let currentImageIndex = 0;
-      if (slideshowImages.length > 0) {
-        setInterval(() => {
-          slideshowImages[currentImageIndex].classList.remove('visible');
-          currentImageIndex = (currentImageIndex + 1) % slideshowImages.length;
-          slideshowImages[currentImageIndex].classList.add('visible');
-        }, 3000);
-      }
-        }
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const targetId = link.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
       });
     }
-
-    const modalButton = document.querySelector('.modal-button');
-    const modal = document.querySelector('.modal');
-    const closeModalButton = document.querySelector('.close-modal-button');
-
-    if (modalButton && modal) {
-      modalButton.addEventListener('click', () => {
-        modal.classList.add('visible');
-      });
-    }
-
-    if (closeModalButton && modal) {
-      closeModalButton.addEventListener('click', () => {
-        modal.classList.remove('visible');
-      });
-    }
-
-    const form = document.querySelector('.contact-form');
-
-    if (form) {
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const nameInput = document.querySelector('#name');
-        const emailInput = document.querySelector('#email');
-        const messageInput = document.querySelector('#message');
-        const name = nameInput ? nameInput.value : '';
-        const email = emailInput ? emailInput.value : '';
-        const message = messageInput ? messageInput.value : '';
-
-        console.log(`Name: ${name}`);
-        console.log(`Email: ${email}`);
-        console.log(`Message: ${message}`);
-      });
-    }
+  });
+});
