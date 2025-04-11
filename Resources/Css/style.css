@@ -2,15 +2,15 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   line-height: 1.6;
-  color: hsl(35, 100%, 20%);
+  color: hsl(180, 100%, 50%);
 }
 
 header,
 footer {
   text-align: center;
   padding: 1em;
-  color: hsl(35, 100%, 20%);
-  background-color: hsl(180, 100%, 50%);
+  color: hsl(180, 100%, 50%);
+  background-color: hsl(240, 100%, 10%);
 }
 
 
@@ -24,7 +24,7 @@ header p {
   margin-top: 10vh;
   margin-bottom: 15vh;
   font-size: 5vh;
-  color: hsl(35, 100%, 20%);
+  color: hsl(180, 100%, 50%);
   font-family: "Oswald", serif;
 }
 
@@ -32,7 +32,7 @@ header .header-paragraph {
   margin-top: 10vh;
   margin-bottom: 15vh;
   font-size: 5vh;
-  color: hsl(35, 100%, 20%);
+  color: hsl(180, 100%, 50%);
   font-family: "Oswald", serif;
 }
 
@@ -44,8 +44,8 @@ h1 {
 main {
   width: 99vw;
   height: 320vh;
-  color: hsl(180, 100%, 50%);
-  background-color: hsl(240, 100%, 12%);
+  color: hsl(35, 100%, 20%);
+  background-color: hsl(180, 100%, 50%);
   text-align: center;
 }
 
@@ -62,6 +62,7 @@ section {
 .section-1-paragraph {
   margin-left: 15vh;
   margin-right: 95vh;
+  color: hsl(240, 100%, 10%);
 }
 
 .section-1-project-header {
@@ -85,6 +86,7 @@ section {
   margin-left: -75vh;
   font-size: 3vh;
   margin-bottom: -70vh;
+  color: hsl(240, 100%, 10%);
 }
 
 .project .img-1 {
@@ -106,6 +108,8 @@ section {
 .project-description-2 {
   margin-left: -75vh;
   font-size: 3vh;
+  color: hsl(240, 100%, 10%);
+
 }
 
 .project .img-2 {
@@ -128,6 +132,8 @@ section {
 .project-description-3 {
   margin-left: -75vh;
   font-size: 3vh;
+  color: hsl(240, 100%, 10%);
+
 }
 
 .project .img-3 {
@@ -148,7 +154,10 @@ section {
 .testimonials-header {
   font-size: 7vh;
 }
+.testimonial-main {
+  color: hsl(240, 100%, 10%);
 
+}
 .testimonials-blockquote-3 {
   margin-bottom: -40vh;
 }
@@ -209,7 +218,7 @@ a:hover {
 }
 
 .footer {
-  background-color: hsl(180, 100%, 50%);
+  background-color: hsl(240, 100%, 10%);
   padding: 20px;
   text-align: center;
 }
