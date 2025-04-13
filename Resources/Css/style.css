@@ -4,15 +4,9 @@
         margin: 0;
         padding: 0;
         background-color: #f4f4f4;
-        /* Light mode background */
-        color: #333;
+        color: #000000;
         line-height: 1.6;
         transition: background-color 0.3s ease, color 0.3s ease;
-      }
-
-      body.dark-mode {
-        background-color: #333;
-        color: #f4f4f4;
       }
 
       /* Navbar Styles */
@@ -31,21 +25,12 @@
         transition: background-color 0.3s ease;
       }
 
-      .navbar.dark-mode {
-        background-color: rgba(244, 244, 244, 0.7);
-        color: #333;
-      }
-
       .navbar a {
         color: rgb(0, 0, 0);
         text-align: center;
         padding: 14px 16px;
         transition: color 0.3s ease-in-out;
         text-decoration: none;
-      }
-
-      .navbar.dark-mode a {
-        color: #333;
       }
 
       .navbar a:hover {
@@ -60,74 +45,12 @@
         color: white;
       }
 
-      body.dark-mode {
-        background-color: #333;
-        color: #fff;
-      }
-
-      .navbar.dark-mode {
-        background-color: #222;
-      }
-
-      .navbar.dark-mode a {
-        color: #fff;
-      }
-
-      .header.dark-mode {
-        background-color: #222;
-        color: #fff;
-      }
-
-      body.dark-mode .section-1-header,
-      .section-2-project-header.dark-mode,
-      .project.dark-mode .project-name,
-      .project.dark-mode .project-name-2,
-      .project.dark-mode .project-name-3,
-      .testimonials.dark-mode .testimonials-header {
-        color: #f4f4f4;
-      }
-
-      main.dark-mode {
-        background-color: #333;
-        color: #fff;
-      }
-
-      .project.dark-mode {
-        background-color: #444;
-        color: #f4f4f4;
-      }
-
-      .project.dark-mode .project-description,
-      .project.dark-mode .project-description-2,
-      .project.dark-mode .project-description-3 {
-        color: #ddd;
-      }
-
-      .testimonials.dark-mode {
-        background-color: #444;
-        color: #f4f4f4;
-      }
-
-      .testimonials.dark-mode blockquote {
-        background-color: #666;
-        color: #f4f4f4;
-      }
-
-      .footer.dark-mode {
-        background-color: #000;
-      }
-
       /* Header Styles */
       .header {
         background-color: #3498db;
         padding: 120px 30px;
         text-align: center;
         transition: background-color 0.3s ease, color 0.3s ease;
-      }
-
-      .header.dark-mode {
-        background-color: #2c3e50;
-        color: #f4f4f4;
       }
 
       .header-title {
@@ -140,20 +63,12 @@
         transition: color 0.3s ease;
       }
 
-      .header.dark-mode .header-title {
-        color: #f4f4f4;
-      }
-
       .header-paragraph {
         font-size: 1.2em;
         color: #555;
         max-width: 700px;
         margin: 0 auto;
         transition: color 0.3s ease;
-      }
-
-      .header.dark-mode .header-paragraph {
-        color: #ddd;
       }
 
       /* Main Content Styles */
@@ -173,49 +88,33 @@
         transition: color 0.3s ease;
       }
 
-      body.dark-mode .section-1-header {
-        color: #f4f4f4;
-      }
-
-      #skills .section-1-skill-1 {
-        border: 2px solid #ccc;
-        width: 6vh;
-        padding: 3px 2px;
-      }
-
-      #skills .section-1-skill-2 {
-        border: 2px solid #ccc;
-        margin-left: 10vh;
-        margin-top: -7vh;
-        width: 10vh;
-        padding: 3px 2px;
-      }
-
-      #skills .section-1-skill-3 {
-        border: 2px solid #ccc;
-        width: 4vh;
-        padding: 3px 2px;
-      }
-
+      /* Skills Section Styles */
+      #skills .section-1-skill-1,
+      #skills .section-1-skill-2,
+      #skills .section-1-skill-3,
       #skills .section-1-skill-4 {
         border: 2px solid #ccc;
         padding: 3px 2px;
-        width: 7vh;
-        margin-left: 10vh;
-        margin-top: -7vh;
       }
 
-      #skills .section-1-tool-1 {
-        display: block;
-        margin-left: 50vh;
+      #skills .section-1-skill-1 {
+        width: 6vh;
+      }
+      
+      #skills .section-1-skill-2 {
+        margin-left: 10vh;
+        margin-top: -7vh;
+        width: 10vh;
+      }
+
+      #skills .section-1-skill-3 {
         width: 4vh;
       }
 
-      #skills .section-1-tool-2 {
-        display: block;
-        margin-left: 60vh;
-        width: 12.5vh;
-        margin-top: -6.5vh;
+      #skills .section-1-skill-4 {
+        width: 7vh;
+        margin-left: 10vh;
+        margin-top: -7vh;
       }
 
       #skills .section-1-tools-header {
@@ -225,15 +124,22 @@
         margin-top: -22vh;
       }
 
+      #skills .section-1-tool-1,
+      #skills .section-1-tool-2 {
+        display: block;
+      }
+
       #skills .section-1-tool-1 {
+        margin-left: 50vh;
+        width: 5.5vh;
         border: 2px solid #ccc;
-        width: 4vh;
-        padding: 2px;
-        padding-left: 3px;
-        padding-right: 17px;
+        padding: 1px 1px 3px 3px;
       }
 
       #skills .section-1-tool-2 {
+        margin-left: 60vh;
+        width: 12.5vh;
+        margin-top: -6.5vh;
         border: 2px solid #ccc;
         width: 18vh;
       }
@@ -261,11 +167,6 @@
         transition: color 0.3s ease;
       }
 
-      body.dark-mode .section-2-project-header {
-        color: #f4f4f4;
-      }
-
-
       /* Project Styles */
       .project {
         display: flex;
@@ -277,11 +178,6 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
         background-color: #fff;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      .project.dark-mode {
-        background-color: #444;
-        color: #f4f4f4;
       }
 
       .project:hover {
@@ -311,12 +207,6 @@
         transition: color 0.3s ease;
       }
 
-      .project.dark-mode .project-name,
-      .project.dark-mode .project-name-2,
-      .project.dark-mode .project-name-3 {
-        color: #f4f4f4;
-      }
-
       .project-description,
       .project-description-2,
       .project-description-3 {
@@ -326,22 +216,11 @@
         transition: color 0.3s ease;
       }
 
-      .project.dark-mode .project-description,
-      .project.dark-mode .project-description-2,
-      .project.dark-mode .project-description-3 {
-        color: #ddd;
-      }
-
       /* Testimonials Styles */
       .testimonials {
         background-color: #f9f9f9;
         padding: 50px 30px;
         transition: background-color 0.3s ease;
-      }
-
-      .testimonials.dark-mode {
-        background-color: #444;
-        color: #f4f4f4;
       }
 
       .testimonials-header {
@@ -350,10 +229,6 @@
         margin-bottom: 30px;
         text-align: center;
         transition: color 0.3s ease;
-      }
-
-      .testimonials.dark-mode .testimonials-header {
-        color: #f4f4f4;
       }
 
       .testimonial-main {
@@ -384,11 +259,6 @@
         transition: background-color 0.3s ease, box-shadow 0.3s ease;
       }
 
-      .testimonials.dark-mode blockquote {
-        background-color: #666;
-        color: #f4f4f4;
-      }
-
       /* Footer Styles */
       .footer {
         background-color: #2c3e50;
@@ -396,10 +266,6 @@
         text-align: center;
         padding: 20px;
         font-size: 0.9em;
-      }
-
-      .footer.dark-mode {
-        background-color: #000;
       }
 
       /* Responsive Design */
