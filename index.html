@@ -7,24 +7,15 @@
       name="description"
       content="Professional Portfolio of Ewan Mbale - freelance web designer and developer."
     />
-    <link rel="stylesheet" href="./Resources/Css/style.css" />
+    <link rel="stylesheet" href="./Resources/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <title>Ewan Mbale - Web Design Portfolio</title>
-    <style>
 
-
-      /* Skills Section Styles */
-      #skills {
-        display: inline-block;
-      }
-
-
-    </style>
   </head>
   <body>
     <nav class="navbar">
@@ -45,25 +36,17 @@
         work to see how I did it and how you can do it.
       </p>
     </header>
-    <script>
-      document.querySelectorAll(".nav-link").forEach((link) => {
-        link.addEventListener("mouseover", function (e) {
-          this.style.color = "#3498db";
-        });
 
-        link.addEventListener("mouseout", function (e) {
-          this.style.color = "#555";
-        });
-      });
-    </script>
+    
+    
     <main>
       <section id="skills">
         <h2 class="section-1-header">Expertise</h2>
         <h3>Languages</h3>
-        <h4>HTML</h4>
-        <h4>JavaScript</h4>
-        <h4>CSS</h4>
-        <h4>Python</h4>
+        <h4 class="section-1-skill-1">HTML</h4>
+        <h4 class="section-1-skill-2">JavaScript</h4>
+        <h4 class="section-1-skill-3">CSS</h4>
+        <h4 class="section-1-skill-4">Python</h4>
         <h3 class="section-1-tools-header">Tools</h3>
         <h4 class="section-1-tool-1">Figma</h4>
         <h4 class="section-1-tool-2">Visual Studio Code</h4>
@@ -82,6 +65,8 @@
               class="img-1"
               src="./Resources/Images/Image-1.png"
               alt="Design System Project Preview"
+              width="600"
+              height="400"
             />
           </a>
           <h4 class="project-name">Web Design System</h4>
@@ -119,7 +104,7 @@
             />
           </a>
           <h4 class="project-name-3">Delta Strings</h4>
-          <p class="project-description-3">
+          <p class="project-description-3"></p>
             A harmonious string quartet playing songs full of warmth and
             sweetness.
           </p>
@@ -146,3 +131,7 @@
         </div>
       </section>
     </main>
+    <script src="main.js">
+    </script>
+  </body>
+</html>
