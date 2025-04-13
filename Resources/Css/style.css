@@ -71,6 +71,23 @@
         transition: color 0.3s ease;
       }
 
+      .header-button {
+        background-color: #36cc3b;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-top-right-radius: 5vh;
+        border-top-left-radius: 5vh;
+        border-bottom-right-radius: 5vh;
+        border-bottom-left-radius: 5vh;
+      }
+
       /* Main Content Styles */
       main {
         padding: 30px;
@@ -100,7 +117,7 @@
       #skills .section-1-skill-1 {
         width: 6vh;
       }
-      
+
       #skills .section-1-skill-2 {
         margin-left: 10vh;
         margin-top: -7vh;
