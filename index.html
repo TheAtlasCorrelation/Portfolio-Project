@@ -1,148 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Professional Portfolio of Ewan Mbale - freelance web designer and developer."
-    />
-    <link rel="stylesheet" href="./Resources/Css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Ewan Mbale - Web Design Portfolio</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <a href="#" class="navbar-brand">E</a>
-      <div class="navbar-links">
-        <a href="#home" class="nav-link" data-page="home">Home</a>
-        <a href="#skills" class="nav-link" data-page="skills">Skills</a>
-        <a href="#projects" class="nav-link" data-page="projects">Projects</a>
-        <a href="#testimonials" class="nav-link" data-page="testimonials">Testimonials</a>
-      </div>
-    </nav>
-    <header id="home" class="header">
-      <h1 class="header-title">Web designer and Developer</h1>
-      <p class="header-paragraph">
-        Who specializes in crafting modern, user-centric websites. Explore my
-        work to see how I did it and how you can do it.
-      </p>
-      <a target="_blank" rel="noopener noreferrer" href="projects.html" class="header-button">View Projects</a>
-      <section id="cta" style="text-align: center;" class="cta">
-        <h2 class="cta-header">Ready to start your project?</h2>
-        <p class="cta-text">Let's discuss your needs and how I can help.</p>
-        <form class="cta-form" style="display: flex; flex-direction: column; align-items: center;"></form>
-          <input type="email" placeholder="Your Email" class="cta-input" style="margin-bottom: 10px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
-          <button type="submit" class="cta-button" style="padding: 10px 20px;         background-color: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer;">Get in Touch</button>
-        </form>   
-      </section>
-        </header>
-    <main>
-      <section id="skills">
-        <h2 class="section-1-header">Expertise</h2>
-        <h3>Languages</h3>
-        <h4 class="section-1-skill-1">HTML</h4>
-        <h4 class="section-1-skill-2">JavaScript</h4>
-        <h4 class="section-1-skill-3">CSS</h4>
-        <h4 class="section-1-skill-4">Python</h4>
-        <h3 class="section-1-tools-header">Tools</h3>
-        <h4 class="section-1-tool-1">Figma</h4>
-        <h4 class="section-1-tool-2">Visual Studio Code</h4>
-        <h3 class="section-1-experience-header">Experience</h3>
-        <h1 class="section-1-time">3+</h1>
-      </section>
 
-      <section id="projects">
-        <h3 class="section-2-project-header">Recent Projects</h3>
-        <div class="project">
-          <a
-            href="https://theatlascorrelation.github.io/Style-Guide/"
-            target="_blank"
-          >
-            <img
-              class="img-1"
-              src="./Resources/Images/Image-1.png"
-              alt="Design System Project Preview"
-            />
-          </a>
-          <h4 class="project-name">Web Design System</h4>
-          <p class="project-description">
-            An extensive system showcasing typography, color schemes, and UI
-            components.
-          </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Professional Portfolio of Ewan Mbale - freelance web designer and developer." />
+  <link rel="stylesheet" href="./Resources/Css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <title>Ewan Mbale - Web Design Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#" class="navbar-brand">E</a>
+    <div class="navbar-links">
+      <a href="#home" class="nav-link" data-page="home">Home</a>
+      <a href="#skills" class="nav-link" data-page="skills">Skills</a>
+      <a href="#projects" class="nav-link" data-page="projects">Projects</a>
+      <a href="#testimonials" class="nav-link" data-page="testimonials">Testimonials</a>
+    </div>
+  </nav>
+  <header id="home" class="header">
+    <h1 class="header-title">Web Designer and Developer</h1>
+    <p class="header-paragraph">
+      Who specializes in crafting modern, user-centric websites. Explore my
+      work to see how I did it and how you can do it.
+    </p>
+    <a target="_blank" rel="noopener noreferrer" href="projects.html" class="header-button">View Projects</a>
+    <section id="cta" style="text-align: center;" class="cta">
+      <h2 class="cta-header">Ready to start your project?</h2>
+      <p class="cta-text">Let's discuss your needs and how I can help.</p>
+      <form id="contactForm" class="cta-form"
+        style="display: flex; flex-direction: column; align-items: center;">
+        <input type="email" id="email" placeholder="Your Email" class="cta-input"
+          style="margin-bottom: 10px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+        <button type="submit" class="cta-button">Get in Touch</button>
+      </form>
+    </section>
+  </header>
+  <main>
+    <section id="skills">
+      <h2 class="section-1-header">Expertise</h2>
+      <h3>Languages</h3>
+      <h4 class="section-1-skill-1">HTML</h4>
+      <h4 class="section-1-skill-2">JavaScript</h4>
+      <h4 class="section-1-skill-3">CSS</h4>
+      <h4 class="section-1-skill-4">Python</h4>
+      <h3 class="section-1-tools-header">Tools</h3>
+      <h4 class="section-1-tool-1">Figma</h4>
+      <h4 class="section-1-tool-2">Visual Studio Code</h4>
+      <h3 class="section-1-experience-header">Experience</h3>
+      <h1 class="section-1-time">3+</h1>
+    </section>
+
+    <section id="projects">
+      <h3 class="section-2-project-header">Recent Projects</h3>
+      <div class="project">
+        <a href="https://theatlascorrelation.github.io/Style-Guide/" target="_blank">
+          <img class="img-1" src="./Resources/Images/Image-1.png" alt="Design System Project Preview" />
+        </a>
+        <h4 class="project-name">Web Design System</h4>
+        <p class="project-description">
+          An extensive system showcasing typography, color schemes, and UI
+          components.
+        </p>
+      </div>
+      <div class="project">
+        <a href="https://theatlascorrelation.github.io/Responsive-club/" target="_blank">
+          <img class="img-2" src="./Resources/Images/Image-2.png" alt="Responsive Club Project Preview" />
+        </a>
+        <h4 class="project-name-2">Responsive Club</h4>
+        <p class="project-description-2"></p>
+          A comprehensive website offering golfing courses and membership
+          details.
+        </p>
+      </div>
+      <div class="project">
+        <a href="https://theatlascorrelation.github.io/Delta-Strings/" target="_blank">
+          <img class="img-3" src="./Resources/Images/Image-3.png" alt="Interactive Game Preview" />
+        </a>
+        <h4 class="project-name-3">Delta Strings</h4>
+        <p class="project-description-3">
+          A harmonious string quartet playing songs full of warmth and
+          sweetness.
+        </p>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+      <h2 class="testimonials-header">Testimonials</h2>
+      <div class="testimonial-container">
+        <div class="testimonial">
+         <cite class="cite-1">Tim Musk</cite>
+         <blockquote>
+          "His work has been exceptional, and I am truly grateful for his
+          expertise and dedication."
+         </blockquote>
         </div>
-        <div class="project">
-          <a
-            href="https://theatlascorrelation.github.io/Responsive-club/"
-            target="_blank"
-          >
-            <img
-              class="img-2"
-              src="./Resources/Images/Image-2.png"
-              alt="Responsive Club Project Preview"
-            />
-          </a>
-          <h4 class="project-name-2">Responsive Club</h4>
-          <p class="project-description-2">
-            A comprehensive website offering golfing courses and membership
-            details.
-          </p>
+        <div class="testimonial">
+         <cite class="cite-2">Bob Bezos</cite>
+         <blockquote>
+          "Mr Mbale's creativity and attention to detail have always been a
+          key factor in my success as a web developer."
+         </blockquote>
         </div>
-        <div class="project">
-          <a
-            href="https://theatlascorrelation.github.io/Delta-Strings/"
-            target="_blank"
-          >
-            <img
-              class="img-3"
-              src="./Resources/Images/Image-3.png"
-              alt="Interactive Game Preview"
-            />
-          </a>
-          <h4 class="project-name-3">Delta Strings</h4>
-          <p class="project-description-3">
-            A harmonious string quartet playing songs full of warmth and
-            sweetness.
-          </p>
+        <div class="testimonial">
+         <cite class="cite-3">Sam Trump</cite>
+         <blockquote>
+          "He has the ability to create engaging and visually appealing
+          websites has been a game-changer for my business."
+         </blockquote>
         </div>
-      </section>
-      <section id="testimonials" class="testimonials">
-        <h2 class="testimonials-header">Testimonials</h2>
-        <div class="testimonial-main">
-          <cite class="cite-1">Tim Musk</cite>
-          <blockquote>
-            "His work has been exceptional, and I am truly grateful for his
-            expertise and dedication."
-          </blockquote>
-          <cite class="cite-2">Bob Bezos</cite>
-          <blockquote>
-            "Mr Mbale's creativity and attention to detail have always been a
-            key factor in my success as a web developer."
-          </blockquote>
-          <cite class="cite-3">Sam Trump</cite>
-          <blockquote>
-            "He has the ability to create engaging and visually appealing
-            websites has been a game-changer for my business."
-          </blockquote>
-        </div>
-      </section>
-      <section id="cta" style="text-align: center;" class="cta">
-        <h2 class="cta-header">Ready to start your project?</h2>
-        <p class="cta-text">Let's discuss your needs and how I can help.</p>
-        <form class="cta-form" style="display: flex; flex-direction: column; align-items: center;"></form>
-          <input type="email" placeholder="Your Email" class="cta-input" style="margin-bottom: 10px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
-          <button type="submit" class="cta-button" style="padding: 10px 20px;         background-color: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer;">Get in Touch</button>
-        </form>   
-      </section>
-    </main>
-      <script src="main.js" defer></script>
-    <footer class="footer">
-      <p>&copy; <span id="year"></span> Ewan Mbale. All rights reserved.</p>
-    </footer>
-  </body>
+      </div>
+      <button id="prevTestimonial">Previous</button>
+      <button id="nextTestimonial">Next</button>
+     </section>
+    
+    <section id="cta" style="text-align: center;" class="cta">
+      <h2 class="cta-header">Contsct Us</h2>
+      <p class="cta-text">Let's discuss your needs and how I can help.</p>
+      <form id="contactForm2" class="cta-form"
+        style="display: flex; flex-direction: column; align-items: center;">
+        <input type="email" id="email2" placeholder="Your Email" class="cta-input">
+        <button type="submit" class="cta-button">Get
+          in Touch</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Ewan Mbale. All rights reserved.</p>
+  </footer>
+  <script>
+    // Get the current year and update the footer year
+    const currentYear = new Date().getFullYear();
+    document.getElementById("year").textContent = currentYear;
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  
+    // Toggle navigation menu
+    const navLinks = document.querySelector(".navbar-links");
+    // Contact form validation
+    const contactForm = document.getElementById("contactForm");
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the form from submitting
+  
+      const emailInput = document.getElementById("email");
+      const emailValue = emailInput.value.trim();
+  
+      if (!isValidEmail(emailValue)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+  
+      alert("Thank you for your message!");
+      contactForm.reset();
+    });
+  
+    function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+  </script>
+  <script src="main.js" defer></script>
+  
+  <script src="main.js" defer></script>
+</body>
+
 </html>
