@@ -43,6 +43,30 @@ document.querySelectorAll(".nav-link").forEach((link) => {
     this.style.color = "#555";
   });
 });
+const currentYear = new Date().getFullYear();
+document.getElementById("year").textContent = currentYear;
+
+const navbarLinks = document.querySelector(".navbar-links");
+const contactForm = document.getElementById("contactForm");
+contactForm.addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent the form from submitting
+
+  const emailInput = document.getElementById("email");
+  const emailValue = emailInput.value.trim();
+
+  if (!isValidEmail(emailValue)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  alert("Thank you for your message!");
+  contactForm.reset();
+});
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
 // document.getElementById('dark-mode-toggle').addEventListener('click', function() {
 //   document.body.classList.add('dark-mode');
 //   document.body.classList.remove('light-mode');

@@ -82,10 +82,10 @@
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
-        border-top-right-radius: 2.5vh;
-        border-top-left-radius: 2.5vh;
-        border-bottom-right-radius: 2.5vh;
-        border-bottom-left-radius: 2.5vh;
+        border-top-right-radius: 1.25vh;
+        border-top-left-radius: 1.25vh;
+        border-bottom-right-radius: 1.25vh;
+        border-bottom-left-radius: 1.25vh;
       }
 
       .cta-button {
@@ -141,6 +141,9 @@
       }
 
       /* Skills Section Styles */
+      #skills {
+        margin-left: 5vh;
+      }
       #skills .section-1-skill-1,
       #skills .section-1-skill-2,
       #skills .section-1-skill-3,

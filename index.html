@@ -116,8 +116,6 @@
          </blockquote>
         </div>
       </div>
-      <button id="prevTestimonial">Previous</button>
-      <button id="nextTestimonial">Next</button>
      </section>
     
     <section id="cta" style="text-align: center;" class="cta">
@@ -134,47 +132,6 @@
   <footer class="footer">
     <p>&copy; <span id="year"></span> Ewan Mbale. All rights reserved.</p>
   </footer>
-  <script>
-    // Get the current year and update the footer year
-    const currentYear = new Date().getFullYear();
-    document.getElementById("year").textContent = currentYear;
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth"
-        });
-      });
-    });
-  
-    // Toggle navigation menu
-    const navLinks = document.querySelector(".navbar-links");
-    // Contact form validation
-    const contactForm = document.getElementById("contactForm");
-    contactForm.addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent the form from submitting
-  
-      const emailInput = document.getElementById("email");
-      const emailValue = emailInput.value.trim();
-  
-      if (!isValidEmail(emailValue)) {
-        alert("Please enter a valid email address.");
-        return;
-      }
-  
-      alert("Thank you for your message!");
-      contactForm.reset();
-    });
-  
-    function isValidEmail(email) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(email);
-    }
-  </script>
   <script src="main.js" defer></script>
-  
-  <script src="main.js" defer></script>
-</body>
-
+  </body>
 </html>
