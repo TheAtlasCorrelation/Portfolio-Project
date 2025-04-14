@@ -23,9 +23,7 @@
         <a href="#home" class="nav-link" data-page="home">Home</a>
         <a href="#skills" class="nav-link" data-page="skills">Skills</a>
         <a href="#projects" class="nav-link" data-page="projects">Projects</a>
-        <a href="#testimonials" class="nav-link" data-page="testimonials"
-          >Testimonials</a
-        >
+        <a href="#testimonials" class="nav-link" data-page="testimonials">Testimonials</a>
       </div>
     </nav>
     <header id="home" class="header">
@@ -34,9 +32,8 @@
         Who specializes in crafting modern, user-centric websites. Explore my
         work to see how I did it and how you can do it.
       </p>
-      <a target="_blank" href="projects.html" class="header-button">View Projects</a>
+      <a target="_blank" rel="noopener noreferrer" href="projects.html" class="header-button">View Projects</a>
         </header>
-
     <main>
       <section id="skills">
         <h2 class="section-1-header">Expertise</h2>
@@ -126,10 +123,18 @@
           </blockquote>
         </div>
       </section>
-      <script src="main.js"></script>
+    <section id="cta" style="text-align: center;" class="cta">
+      <h2 class="cta-header">Ready to start your project?</h2>
+      <p class="cta-text">Let's discuss your needs and how I can help.</p>
+      <form class="cta-form" style="display: flex; flex-direction: column; align-items: center;">
+        <input type="email" placeholder="Your Email" class="cta-input" style="margin-bottom: 10px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+        <button type="submit" class="cta-button" style="padding: 10px 20px;         background-color: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer;">Get in Touch</button>
+      </form>   
+    </section>
     </main>
+      <script src="main.js" defer></script>
     <footer class="footer">
-      <p>&copy; 2024 Ewan Mbale. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Ewan Mbale. All rights reserved.</p>
     </footer>
   </body>
 </html>
