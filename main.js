@@ -1,4 +1,5 @@
-const sections = document.querySelector("main")?.querySelectorAll("section") || [];
+const sections =
+  document.querySelector("main")?.querySelectorAll("section") || [];
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -36,8 +37,7 @@ navLinks.forEach((link) => {
     if (targetElement) {
       targetElement.scrollIntoView({
         behavior: "smooth",
-        });
-      
+      });
     }
   });
 });
@@ -48,7 +48,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   });
 
   link.addEventListener("mouseout", function (e) {
-    this.style.color = "#555";
+    this.style.color = "black";
   });
 });
 const currentYear = new Date().getFullYear();
