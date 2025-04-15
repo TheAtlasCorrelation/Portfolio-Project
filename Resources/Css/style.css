@@ -38,6 +38,12 @@
         color: #3498db;
       }
 
+      .navbar-brand {
+
+        height: 5vh;
+        width: 5vh;
+      }
+
       .navbar-links {
         display: flex;
         gap: 20px;
@@ -69,6 +75,8 @@
         max-width: 700px;
         margin: 0 auto;
         transition: color 0.3s ease;
+        font-family: "Oswald", sans-serif;
+
       }
 
       .header-button {
@@ -86,6 +94,8 @@
         border-top-left-radius: 1.25vh;
         border-bottom-right-radius: 1.25vh;
         border-bottom-left-radius: 1.25vh;
+        font-family: "Oswald", sans-serif;
+
       }
 
       .cta-button {
@@ -100,7 +110,10 @@
         border-top-left-radius: 1vh;
         border-bottom-right-radius: 1vh;
         border-bottom-left-radius: 1vh;
+        font-family: "Oswald", sans-serif;
+
       }
+
       .cta-form {
 
         display: flex;
@@ -108,10 +121,15 @@
         align-items: center;
         justify-content: center;
         margin-top: 20px;
+        font-family: "Oswald", sans-serif;
+
       }
+
       #ctaSection {
         padding: 30px;
         text-align: center;
+        font-family: "Oswald", sans-serif;
+
       }
 
       .cta-input {
@@ -124,6 +142,8 @@
       /* Main Content Styles */
       main {
         padding: 30px;
+        font-family: "Oswald", sans-serif;
+
       }
 
       section {
@@ -142,6 +162,7 @@
       #skills {
         margin-left: 5vh;
       }
+
       #skills .section-1-skill-1,
       #skills .section-1-skill-2,
       #skills .section-1-skill-3,
@@ -222,51 +243,123 @@
 
       /* Project Styles */
       .project {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin-bottom: 40px;
         padding: 20px;
         border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-        background-color: #fff;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
-      .project:hover {
+      .project .img-1:hover {
         transform: translateY(-5px);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
       }
 
-      .project img {
+      .project .img-1 {
         width: 70vh;
         height: 40vh;
         border-radius: 8px;
-        margin-bottom: 20px;
+        margin-bottom: 0;
+        margin-right: 20px;
         transition: transform 0.3s ease;
+
       }
 
-      .project img:hover {
-        transform: scale(1.05);
+      .project .img-1:hover {
+        transform: scale(1.02);
       }
 
-      .project-name,
-      .project-name-2,
+      .project .img-2:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .project .img-2 {
+        width: 70vh;
+        height: 40vh;
+        border-radius: 8px;
+        margin-bottom: 0;
+        margin-right: 20px;
+        margin-left: 112.5vh;
+        transition: transform 0.3s ease;
+
+      }
+
+      .project .img-2:hover {
+        transform: scale(1.02);
+      }
+
+      .project .img-3:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .project .img-3 {
+        width: 70vh;
+        height: 40vh;
+        border-radius: 8px;
+        margin-bottom: 0;
+        margin-right: 20px;
+        transition: transform 0.3s ease;
+
+      }
+
+      .project .img-3:hover {
+        transform: scale(1.02);
+      }
+
+      .project-name {
+        font-size: 1.6em;
+        color: #2c3e50;
+        margin-top: -30vh;
+        margin-bottom: 10px;
+        margin-left: 100vh;
+        text-align: center;
+        transition: color 0.3s ease;
+      }
+
+      .project-name-2 {
+        font-size: 1.6em;
+        color: #2c3e50;
+        margin-top: -30vh;
+        margin-bottom: 10px;
+        margin-left: 23vh;
+
+        transition: color 0.3s ease;
+      }
+
       .project-name-3 {
         font-size: 1.6em;
         color: #2c3e50;
+        margin-top: -30vh;
         margin-bottom: 10px;
+        margin-left: 100vh;
+
         text-align: center;
         transition: color 0.3s ease;
       }
 
-      .project-description,
-      .project-description-2,
+      .project-description {
+        font-size: 1.1em;
+        color: #555;
+        text-align: right;
+        transition: color 0.3s ease;
+        margin-bottom: 40vh;
+      }
+
+      .project-description-2 {
+        font-size: 1.1em;
+        color: #555;
+        text-align: left;
+        transition: color 0.3s ease;
+        margin-bottom: 40vh;
+      }
+
       .project-description-3 {
         font-size: 1.1em;
         color: #555;
-        text-align: center;
+        text-align: right;
         transition: color 0.3s ease;
+        margin-bottom: 40vh;
       }
 
       /* Testimonials Styles */

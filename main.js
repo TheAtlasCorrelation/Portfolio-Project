@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll("section");
+const sections = document.querySelector("main")?.querySelectorAll("section") || [];
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -19,21 +19,29 @@ const navLinks = document.querySelectorAll("nav a");
 navLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
-    const targetId = link.getAttribute("href");
+    let targetId = link.getAttribute("href");
+    if (targetId && targetId.startsWith("#")) {
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    } else {
+      console.warn(`Invalid href value: ${targetId}`);
+      return;
+    }
     const targetElement = document.querySelector(targetId);
 
     if (targetElement) {
       targetElement.scrollIntoView({
         behavior: "smooth",
-      });
+        });
+      
     }
-
-    navLinks.forEach((otherLink) => {
-      otherLink.classList.remove("active");
-    });
-    link.classList.add("active");
   });
 });
+
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("mouseover", function (e) {
     this.style.color = "#3498db";
@@ -44,24 +52,40 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   });
 });
 const currentYear = new Date().getFullYear();
-document.getElementById("year").textContent = currentYear;
-
-const navbarLinks = document.querySelector(".navbar-links");
+const yearElement = document.getElementById("year");
+if (yearElement) {
+  yearElement.textContent = currentYear;
+}
 const contactForm = document.getElementById("contactForm");
-contactForm.addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent the form from submitting
+if (contactForm) {
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  const emailInput = document.getElementById("email");
-  const emailValue = emailInput.value.trim();
+    const emailInput = document.getElementById("email");
+    const emailValue = emailInput.value.trim();
 
-  if (!isValidEmail(emailValue)) {
-    alert("Please enter a valid email address.");
-    return;
-  }
+    if (!isValidEmail(emailValue)) {
+      const errorMessage = document.getElementById("emailError");
+      if (!errorMessage) {
+        const errorSpan = document.createElement("span");
+        errorSpan.id = "emailError";
+        errorSpan.textContent = "Please enter a valid email address.";
+        errorSpan.style.color = "red";
+        emailInput.parentNode.insertBefore(errorSpan, emailInput.nextSibling);
+      }
+      emailInput.style.borderColor = "red";
+      return;
+    }
 
-  alert("Thank you for your message!");
-  contactForm.reset();
-});
+    const errorMessage = document.getElementById("emailError");
+    if (errorMessage) {
+      errorMessage.remove();
+    }
+    emailInput.style.borderColor = "";
+    alert("Thank you for your message!");
+    contactForm.reset();
+  });
+}
 
 function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
