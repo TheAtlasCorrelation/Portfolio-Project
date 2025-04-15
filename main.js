@@ -17,27 +17,19 @@ sections.forEach((section) => {
 
 const navLinks = document.querySelectorAll("nav a");
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    let targetId = link.getAttribute("href");
-    if (targetId && targetId.startsWith("#")) {
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth",
-        });
-      }
-    } else {
-      console.warn(`Invalid href value: ${targetId}`);
-      return;
-    }
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href');
     const targetElement = document.querySelector(targetId);
 
     if (targetElement) {
       targetElement.scrollIntoView({
-        behavior: "smooth",
+        behavior: 'smooth'
       });
+    } else {
+      console.warn(`Target element not found: ${targetId}`);
     }
   });
 });
@@ -48,7 +40,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   });
 
   link.addEventListener("mouseout", function (e) {
-    this.style.color = "black";
+    this.style.color = "white";
   });
 });
 const currentYear = new Date().getFullYear();
