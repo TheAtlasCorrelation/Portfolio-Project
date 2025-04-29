@@ -17,16 +17,16 @@ sections.forEach((section) => {
 
 const navLinks = document.querySelectorAll("nav a");
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
-    const targetId = this.getAttribute('href');
+    const targetId = this.getAttribute("href");
     const targetElement = document.querySelector(targetId);
 
     if (targetElement) {
       targetElement.scrollIntoView({
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     } else {
       console.warn(`Target element not found: ${targetId}`);
@@ -43,11 +43,6 @@ document.querySelectorAll(".nav-link").forEach((link) => {
     this.style.color = "white";
   });
 });
-const currentYear = new Date().getFullYear();
-const yearElement = document.getElementById("year");
-if (yearElement) {
-  yearElement.textContent = currentYear;
-}
 const contactForm = document.getElementById("contactForm");
 if (contactForm) {
   contactForm.addEventListener("submit", function (event) {
@@ -74,7 +69,7 @@ if (contactForm) {
       errorMessage.remove();
     }
     emailInput.style.borderColor = "";
-    alert("Thank you for your message!");
+    alert("Thank you for viewing my website!");
     contactForm.reset();
   });
 }
@@ -83,6 +78,49 @@ function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
+const testimonials = [
+  {
+    name: "Ewan Mbale",
+    text: " Chisumphi is a great web developer.",
+  },
+  {
+    name: "Chisumphi",
+    text: "Ewan is a great web developer.",
+  },
+];
+
+document
+  .getElementById("addTestimonialForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let reviewerName = document.getElementById("reviewerName").value;
+    let reviewerComment = document.getElementById("reviewerComment").value;
+
+    let newTestimonial = document.createElement("div");
+    newTestimonial.classList.add("testimonial");
+
+    let citeElement = document.createElement("cite");
+    citeElement.textContent = reviewerName;
+
+    let blockquoteElement = document.createElement("blockquote");
+    blockquoteElement.textContent = reviewerComment;
+
+    newTestimonial.appendChild(citeElement);
+    newTestimonial.appendChild(blockquoteElement);
+
+    let newTestimonialsContainer = document.getElementById("newTestimonials");
+
+    newTestimonialsContainer.appendChild(newTestimonial);
+
+    let testimonialMessage = document.getElementById("testimonialMessage");
+    testimonialMessage.textContent = "Thank you for your review!";
+    testimonialMessage.style.color = "white";
+
+    setTimeout(function () {
+      testimonialMessage.textContent = "";
+    }, 5000); // Clear after 5 seconds
+  });
 // document.getElementById('dark-mode-toggle').addEventListener('click', function() {
 //   document.body.classList.add('dark-mode');
 //   document.body.classList.remove('light-mode');
