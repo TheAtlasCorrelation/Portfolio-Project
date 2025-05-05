@@ -16,18 +16,70 @@ nav {
     gap: 25vw;
 
 }
+
 .nav-1 {
     margin-bottom: 40vh;
     margin-top: -30vh;
-    margin-left: 35vh;
+    margin-left: 32vh;
     gap: 25vw;
+    text-decoration: none;
+    list-style-type: none;
 }
 
+.nav-2 {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-3 {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-4 {
+    text-decoration: none;
+    list-style-type: none;
+}
 
 header {
     padding: 20px 0;
     margin-left: 50vh;
     margin-top: 30vh;
+    margin-bottom: 40vh;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header-head {
+    color: white;
+    position: relative;
+    font-size: 4.5rem;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 900;
+}
+
+.button {
+    color: white;
+    background-color: hsl(240, 100%, 10%);
+    font-size: 3.5vh;
+    border-radius: 1vh;
+    text-decoration: none;
+    list-style-type: none;
+    width: 710vw;
+
+}
+
+.about-head {
+    color: white;
+    position: relative;
+    font-size: 3.5rem;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 900;
+    margin-left: 35vh;
+}
+
+.about-paragraph {
+    margin-left: 40vh;
 }
 
 h1 {
