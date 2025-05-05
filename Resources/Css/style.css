@@ -2,21 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 nav {
-    color: gray;
+    color: rgb(75, 75, 75);
     text-decoration: none;
     list-style-type: none;
     margin-bottom: 40vh;
     margin-top: -30vh;
     margin-left: 70vh;
     gap: 25vw;
+    position: fixed;
+    z-index: 100;
+    background-color: hsla(0, 0%, 100%, 0.5);
 
 }
-
+.logo {
+    height: 8vh;
+    width: 16vh;
+    margin-bottom: -3vw;
+    margin-left: -58vw;
+}
 .nav-1 {
     margin-bottom: 40vh;
     margin-top: -30vh;
@@ -45,13 +53,13 @@ header {
     padding: 20px 0;
     margin-left: 50vh;
     margin-top: 30vh;
-    margin-bottom: 40vh;
+    margin-bottom: 60vh;
     text-decoration: none;
     list-style-type: none;
 }
 
 .header-head {
-    color: white;
+    color: rgb(0, 0, 0);
     position: relative;
     font-size: 4.5rem;
     font-family: "Gothic A1", sans-serif;
@@ -59,18 +67,18 @@ header {
 }
 
 .button {
-    color: white;
-    background-color: hsl(240, 100%, 10%);
+    color: rgb(255, 255, 255);
+    background-color: hsl(0, 0%, 0%);
     font-size: 3.5vh;
     border-radius: 1vh;
     text-decoration: none;
     list-style-type: none;
-    width: 710vw;
-
+    height: 5vh;
+    width: 11vw;
 }
 
 .about-head {
-    color: white;
+    color: rgb(0, 0, 0);
     position: relative;
     font-size: 3.5rem;
     font-family: "Gothic A1", sans-serif;
@@ -91,6 +99,6 @@ h1 {
 }
 
 h2 {
-    color: grey;
+    color: rgb(100, 100, 100);
     font-size: 1.2rem;
 }
