@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    color: gray;
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 40vh;
+    margin-top: -30vh;
+    margin-left: 70vh;
+    gap: 25vw;
+
+}
+.nav-1 {
+    margin-bottom: 40vh;
+    margin-top: -30vh;
+    margin-left: 35vh;
+    gap: 25vw;
+}
+
+
+header {
+    padding: 20px 0;
+    margin-left: 50vh;
+    margin-top: 30vh;
+}
+
+h1 {
+    color: white;
+    position: relative;
+    font-size: 4.5rem;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    color: grey;
+    font-size: 1.2rem;
+}
