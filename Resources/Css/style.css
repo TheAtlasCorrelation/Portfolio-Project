@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flexbox;
 }
 
 nav {
@@ -13,14 +14,17 @@ nav {
     gap: 25vw;
     position: fixed;
     z-index: 1;
-    height: 2.5vw;
+    height: 4vw;
+    padding-top: 1.75vh;
     width: 1000vw;
     margin-left: -50vh;
     background-color: hsl(0, 0%, 0%);
 
 }
 
-
+a {
+    color: white;
+}
 
 .nav-1 {
     margin-bottom: 40vh;
@@ -151,9 +155,10 @@ header {
     border: 4px solid hsl(0, 0%, 33%);
     width: 26vh;
     padding-left: 2vh;
-    height: 35vh;
-    margin-left: 5vh;
+    height: 27.5vh;
+    margin-left: 85vh;
     margin-bottom: 10vh;
+    margin-top: -36.25vh;
     padding-left: 1vh;
     padding-top: 2.5vh;
 }
@@ -212,6 +217,5 @@ h1 {
 }
 
 h2 {
-    color: rgb(100, 100, 100);
     font-size: 1.5rem;
 }
