@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     display: flexbox;
+    background-color: rgb(13, 0, 51);
+    font-family: "Gothic A1", sans-serif;
+    color: white;
 }
 
 nav {
-    color: white;
     text-decoration: none;
     list-style-type: none;
     margin-bottom: 40vh;
@@ -18,40 +20,7 @@ nav {
     padding-top: 1.75vh;
     width: 1000vw;
     margin-left: -50vh;
-    background-color: hsl(0, 0%, 0%);
 
-}
-
-a {
-    color: white;
-}
-
-.nav-1 {
-    margin-bottom: 40vh;
-    margin-top: -30vh;
-    gap: 25vw;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1.3rem;
-    margin-left: 75vw;
-}
-
-.nav-2 {
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1.3rem;
-}
-
-.nav-3 {
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1.3rem;
-}
-
-.nav-4 {
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1.3rem;
 }
 
 header {
@@ -64,7 +33,7 @@ header {
 }
 
 .header-head {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     position: relative;
     font-size: 4.5rem;
     font-family: "Gothic A1", sans-serif;
@@ -76,13 +45,13 @@ header {
 }
 
 .button {
-    color: rgb(255, 255, 255);
-    background-color: hsl(0, 0%, 0%);
+    color: rgb(0, 0, 0);
+    background-color: hsl(0, 0%, 100%);
     font-size: 2vh;
     border-radius: 1vh;
     text-decoration: none;
     list-style-type: none;
-    height: 3vw;
+    height: 2.75vw;
     width: 8vw;
     padding-left: 1.175vw;
     padding-right: 0.65vh;
@@ -91,23 +60,24 @@ header {
     padding-top: 0.8vw;
 }
 .button1 {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
     font-size: 2vh;
     border-radius: 1vh;
     text-decoration: none;
     list-style-type: none;
-    height: 3vw;
+    height: 2.7vw;
     width: 10vw;
     padding-left: 1.175vw;
     padding-right: 0.65vh;
     margin-bottom: -7vw;
     padding-bottom: -10vw;
-    padding-top: 0.8vw;
+    padding-top: 0.9vw;
+    margin-top: 0.6vh;
     margin-left: 25vh;
 }
 .about-header {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: "Gothic A1", sans-serif;
     font-weight: 900;
     margin-left: 40vw;
@@ -120,7 +90,7 @@ header {
 }
 
 .about-info {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     position: relative;
     font-size: 3.5rem;
     font-family: "Gothic A1", sans-serif;
@@ -145,7 +115,7 @@ header {
 }
 
 .about-background-header {
-    color: rgb(77, 77, 77);
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     margin-bottom: 2.5vh;
     font-weight: 900;
@@ -164,18 +134,18 @@ header {
 }
 
 .about-background-header1 {
-    color: rgb(77, 77, 77);
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     margin-bottom: 2.5vh;
     font-weight: 900;
 }
 .skill1 {
-    border: 2px solid gray;
+    border: 2px solid rgb(255, 255, 255);
     width: 4.2vw;
     border-radius: 0.5vh;
 }
 .skill2 {
-    border: 2px solid gray;
+    border: 2px solid rgb(255, 255, 255);
     width: 6vw;
     border-radius: 0.5vh;
     margin-left: 10vh;
@@ -183,19 +153,19 @@ header {
     margin-bottom: 0.4vw;
 }
 .skill3 {
-    border: 2px solid gray;
+    border: 2px solid rgb(255, 255, 255);
     width: 3vw;
     border-radius: 0.5vh;
 }
 .skill4 {
-    border: 2px solid gray;
+    border: 2px solid white;
     width: 2.3vw;
     border-radius: 0.5vh;
     margin-left: 7vh;
     margin-top: -3.6vh;
 }
 .skill5 {
-    border: 2px solid gray;
+    border: 2px solid white;
     width: 4.6vw;
     border-radius: 0.5vh;
     margin-left: 12.5vh;    
@@ -203,7 +173,7 @@ header {
     margin-bottom: 0.2vh;
 }
 .skill6 {
-    border: 2px solid gray;
+    border: 2px solid white;
     width: 1.5vw;
     border-radius: 0.5vh;
 }
