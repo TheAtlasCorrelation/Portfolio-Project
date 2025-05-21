@@ -1,20 +1,3 @@
-const sections =
-  document.querySelector("main")?.querySelectorAll("section") || [];
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
-    }
-  });
-});
-
-sections.forEach((section) => {
-  observer.observe(section);
-});
-
 const navLinks = document.querySelectorAll("nav a");
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -121,6 +104,9 @@ document
       testimonialMessage.textContent = "";
     }, 5000); // Clear after 5 seconds
   });
+document.querySelector(".hamburger").addEventListener("click", function () {
+  document.querySelector(".nav-links").classList.toggle("active");
+});
 // document.getElementById('dark-mode-toggle').addEventListener('click', function() {
 //   document.body.classList.add('dark-mode');
 //   document.body.classList.remove('light-mode');

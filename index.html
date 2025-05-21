@@ -17,53 +17,134 @@
     />
     <link
       rel="stylesheet"
-      class="material-symbols-outlined"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close"
     />
     <style>
       .material-symbols-outlined {
         font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-        height: 8vw;
-        width: 8vw;
+      }
+
+      /* Fullscreen Nav Styles */
+      .fullscreen-nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        color: black;
+      }
+
+      .fullscreen-nav .nav-links {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        color: black;
+      }
+
+      .fullscreen-nav .nav-links li {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        display: block;
+        transition: 0.3s;
+        color: black;
+
+      }
+
+      .fullscreen-nav .nav-links li:hover,
+      .fullscreen-nav .nav-links li:focus {
         color: #000000;
+      }
+
+      .fullscreen-nav .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        color: #000000;
+        cursor: pointer;
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        padding: 10px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      @media screen and (max-height: 450px) {
+        .fullscreen-nav .nav-links {
+          top: 10%;
+        }
+        .fullscreen-nav .nav-links li {
+          font-size: 20px;
+        }
       }
     </style>
   </head>
   <body>
     <header>
-      <!-- <nav class="navbar">
-        <ul>
-          <h2>
-            <a class="nav-1">Home</a> |
-            <a href="./about.html" class="nav-2">About</a> |
-            <a href="./projects.html" class="nav-3">Projects</a> |
-            <a href="./contact.html" class="nav-4">Contact us</a>
-          </h2>
-        </ul>
-      </nav> -->
-      <img class="header-image" src="./Resources/Images/ChatGPT Image May 15, 2025, 07_39_02 PM.png"/>
-      <h1 class="header-head">EWAN MBALE</h1>
-      <h3 class="header-info">
+      <nav class="navbar">
+        <div class="hamburger">
+          <span class="material-symbols-outlined">
+            <img href="./Resources/Images/hamburger.png" />
+          </span>
+        </div>
+
+        <!-- Fullscreen Nav -->
+        <div id="myFullscreenNav" class="fullscreen-nav">
+          <a
+            href="javascript:void(0)"
+            class="closebtn material-symbols-outlined"
+            ><img href="./Resources/Images/x.png"
+          /></a>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <img
+        class="header-image"
+        src="./Resources/Images/ChatGPT Image May 15, 2025, 07_39_02 PM.png"
+        alt="Header Image"
+      />
+      <h1 class="header-main-title">EWAN MBALE</h1>
+      <h3 class="header-subtitle">
         Frontend Developer | Web Designer and Developer | Graphic Designer
       </h3>
       <a href="./contact.html">
-        <div class="button">Get in Touch</div>
+        <div class="contact-button">Get in Touch</div>
       </a>
       <a href="./projects.html">
-        <div class="button1">View my projects</div>
+        <div class="projects-button">View my projects</div>
       </a>
     </header>
     <main>
-      <section>
-        <h3 class="about-header">About</h3>
-        <h2 class="about-info">Molding unique animations and websites</h2>
-        <h3 class="about-para">
+      <section class="about-section">
+        <h3 class="about-section-title">About</h3>
+        <h2 class="about-main-info">Molding unique animations and websites</h2>
+        <h3 class="about-short-description">
           Graphic designer and website forger who focuses on pinpoint precision
           in his animations and websites.
         </h3>
-        <div class="about-main">
-          <h2 class="about-background-header">Background</h2>
-          <p class="about-paragraph">
+        <div class="about-background">
+          <h2 class="about-background-title">Background</h2>
+          <p class="about-background-paragraph">
             As a Graphic Designer and Website forger with 3 programming<br />
             certifications, I focuse on creating rigorous 3d animations<br />
             and combining it with meticulous well-designed websites.<br />
@@ -71,17 +152,32 @@
             and combining both to create solutions that businesses value.
           </p>
         </div>
-        <div class="about-main1">
-          <h2 class="about-background-header1">Skillstack</h2>
-          <h3 class="skill1">Python</h3>
-          <h3 class="skill2">Javascript</h3>
-          <h3 class="skill3">Html</h3>
-          <h3 class="skill4">Css</h3>
-          <h3 class="skill5">Blender</h3>
-          <h3 class="skill6">AI</h3>
+        <div class="about-skillstack">
+          <h2 class="skillstack-title">Skillstack</h2>
+          <div class="skillstack">
+            <h3 class="skill-python">Python</h3>
+            <h3 class="skill-javascript">Javascript</h3>
+            <h3 class="skill-html">Html</h3>
+            <h3 class="skill-css">Css</h3>
+            <h3 class="skill-blender">Blender</h3>
+            <h3 class="skill-ai">AI</h3>
+          </div>
         </div>
       </section>
     </main>
-    <script src="main.js"></script>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const fullscreenNav = document.getElementById("myFullscreenNav");
+      const closeBtn = document.querySelector(".closebtn");
+
+      hamburger.addEventListener("click", () => {
+        fullscreenNav.style.width = "100%";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        fullscreenNav.style.width = "0%";
+      });
+    </script>
+    <script src="./Resources/Js/script.js"></script>
   </body>
 </html>
