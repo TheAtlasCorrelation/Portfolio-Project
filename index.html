@@ -25,19 +25,21 @@
       <nav class="navbar">
         <div class="hamburger">
           <span class="material-symbols-outlined">
-            <i class="material-symbols-outlined"><img href="./Resources/Images/hamburger.png"/></img>
+            <i class="material-symbols-outlined"
+              ><img  src="./Resources/Images/hamburger.png"
+            /></i>
           </span>
-          <div id="myFullscreenNav" class="fullscreen-nav">
-            <a class="closebtn material-symbols-outlined"
-              ><i class="material-symbols-outlined">close</i>
-            </a>
-            <ul class="nav-links">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./projects.html">Projects</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-          </div>
+        </div>
+        <div id="myFullscreenNav" class="fullscreen-nav">
+          <span class="closebtn material-symbols-outlined" id="closeButton">
+            close
+          </span>
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
         </div>
       </nav>
 
@@ -48,7 +50,7 @@
       />
       <h1 class="header-main-title">EWAN MBALE</h1>
       <h3 class="header-subtitle">
-        Frontend Developer | Web Designer and Developer | Graphic Designer
+        Frontend Developer | Web Designer | Graphic Designer
       </h3>
       <a href="./contact.html">
         <div class="contact-button">Get in Touch</div>
@@ -88,19 +90,6 @@
         </div>
       </section>
     </main>
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const fullscreenNav = document.getElementById("myFullscreenNav");
-      const closeBtn = document.querySelector(".closebtn");
-
-      hamburger.addEventListener("click", () => {
-        fullscreenNav.style.width = "100%";
-      });
-
-      closeBtn.addEventListener("click", () => {
-        fullscreenNav.style.width = "0%";
-      });
-    </script>
-    <script src="./Resources/Js/script.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
