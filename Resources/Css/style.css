@@ -13,85 +13,66 @@ body {
     background: hsl(100, 100%, 90%);
 }
 
-.material-symbols-outlined {
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-    color: #000000;
+.hamburger {
+    cursor: pointer;
+    padding: 15px;
+    z-index: 100;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Hamburger to X animation */
+.hamburger.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.active .line2 {
+    opacity: 0;
+}
+
+.hamburger.active .line3 {
+    transform: rotate(45deg) translate(-8px, -6px);
 }
 
 .fullscreen-nav {
-    height: 100%;
-    width: 0;
+    display: none;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    overflow-x: hidden;
-    transition: 0.1s;
-}
-
-.fullscreen-nav .nav-links {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     width: 100%;
-    text-align: center;
-    margin-top: 0;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 99;
 }
 
-.fullscreen-nav .nav-links a {
-    padding: 10px;
-    text-decoration: none;
-    font-size: 4rem;
-    display: block;
-    transition: 0.3s;
-    color: rgb(0, 0, 0);
+.fullscreen-nav.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.fullscreen-nav .nav-links a:hover,
-.fullscreen-nav .nav-links a:focus {
-    color: #4e4e4e;
-}
-
-.fullscreen-nav .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-.fullscreen-nav .closebtn:hover,
-.fullscreen-nav .closebtn:focus {
-    color: #bbb;
-}
-
-.hamburger {
-    color: black;
-    cursor: pointer;
-    margin-left: -13.4rem;
-    margin-top: -15rem;
-    margin-bottom: 11.4rem;
-}
-
 
 .nav-links {
-    color: #000000;
+    list-style: none;
+    text-align: center;
 }
 
-@media screen and (max-height: 450px) {
-    .fullscreen-nav .nav-links {
-        top: 10%;
-    }
+.nav-links li {
+    margin: 20px 0;
+}
 
-    .fullscreen-nav .nav-links li {
-        font-size: 20px;
-    }
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
 }
 
 header {
@@ -123,7 +104,7 @@ header {
     width: 33.33vw;
     height: 100vh;
     margin-left: 100vh;
-    margin-top: -37.52vh;
+    margin-top: -15.85rem;
     margin-bottom: -27.5vw;
 }
 
@@ -142,6 +123,8 @@ header {
     padding-bottom: -1vw;
     padding-top: 1.2vw;
 }
+
+
 
 .projects-button {
     color: hsl(0, 0%, 100%);
@@ -190,7 +173,7 @@ header {
 .about-background {
     border-radius: 1vh;
     border: 3px solid hsl(0, 0%, 33%);
-    width: 76vh;
+    width: 72vh;
     height: 27vh;
     margin-left: 5vh;
     margin-bottom: 10vh;
@@ -206,7 +189,7 @@ header {
 
 .about-background-paragraph {
 
-    width: 60vh;
+    width: 64vh;
     padding-left: 2vh;
     height: 20vh;
     margin-left: 1vh;
@@ -241,7 +224,7 @@ header {
 
 .skill-python {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
+    border: 1px solid hsl(0, 0%, 33%);
     width: 5.8rem;
     height: 2vw;
     padding-left: 12px;
@@ -252,7 +235,7 @@ header {
 
 .skill-javascript {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
+    border: 1px solid hsl(0, 0%, 33%);
     width: 8.15vw;
     padding-left: 12px;
     padding-top: 2px;
@@ -262,7 +245,7 @@ header {
 
 .skill-html {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
+    border: 1px solid hsl(0, 0%, 33%);
     width: 4.7rem;
     padding-left: 12px;
     padding-top: 2px;
@@ -274,7 +257,7 @@ header {
 
 .skill-css {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
+    border: 1px solid hsl(0, 0%, 33%);
     width: 4vw;
     padding-left: 12px;
     padding-top: 2px;
@@ -284,7 +267,7 @@ header {
 
 .skill-blender {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
+    border: 1px solid hsl(0, 0%, 33%);
     width: 6.5vw;
     padding-left: 12px;
     padding-top: 2px;
@@ -296,8 +279,8 @@ header {
 
 .skill-ai {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
-    width: 7vw;
+    border: 1px solid hsl(0, 0%, 33%);
+    width: 3.1vw;
     max-width: 7vw;
     padding-left: 12px;
     padding-top: 2px;

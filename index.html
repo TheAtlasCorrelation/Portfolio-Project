@@ -11,35 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close"
-    />
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="hamburger">
-          <span class="material-symbols-outlined">
-            <i class="material-symbols-outlined"
-              ><img  src="./Resources/Images/hamburger.png"
-            /></i>
-          </span>
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
         <div id="myFullscreenNav" class="fullscreen-nav">
-          <span class="closebtn material-symbols-outlined" id="closeButton">
-            close
-          </span>
-          <ul class="nav-links">
+          <a href="javascript:void(0)" class="closebtn">&times;</a>
+          <div class="nav-links">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./contact.html">Contact</a></li>
-          </ul>
+          </div>
         </div>
       </nav>
 
@@ -90,6 +78,20 @@
         </div>
       </section>
     </main>
-    <script src="./main.js"></script>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const fullscreenNav = document.getElementById("myFullscreenNav");
+      const closeBtn = document.querySelector(".closebtn");
+
+      hamburger.addEventListener("click", () => {
+        fullscreenNav.style.width = "100%";
+        hamburger.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        fullscreenNav.style.width = "0%";
+        hamburger.classList.remove("active");
+      });
+    </script>
   </body>
 </html>
