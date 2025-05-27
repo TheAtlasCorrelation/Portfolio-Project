@@ -20,8 +20,6 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close"
     />
   </head>
-
-  </head>
   <body>
     <header>
       <nav class="navbar">
@@ -31,9 +29,9 @@
           <div class="bar3"></div>
         </div>
         <div id="myFullscreenNav" class="fullscreen-nav">
-          <div class="x-button">
+          <button class="x-button">
             <span class="material-symbols-outlined">close</span>
-          </div>
+          </button>
           <ul class="nav-links">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
@@ -89,20 +87,21 @@
           </div>
         </div>
       </section>
+      <footer></footer>
     </main>
     <script src="./main.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const hamburger = document.querySelector(".hamburger");
         const fullscreenNav = document.getElementById("myFullscreenNav");
-        const xButton = document.querySelector(".x-button");
+        const closeButton = document.querySelector(".x-button");
 
         hamburger.addEventListener("click", function () {
           hamburger.classList.add("active");
           fullscreenNav.classList.add("active");
         });
 
-        xButton.addEventListener("click", function () {
+        closeButton.addEventListener("click", function () {
           hamburger.classList.remove("active");
           fullscreenNav.classList.remove("active");
         });

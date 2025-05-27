@@ -243,14 +243,14 @@ header {
 .about-skillstack {
     border-radius: 1vh;
     border: 2px solid hsl(0, 0%, 33%);
-    width: 50vh;
+    width: 45vh;
     height: 20vh;
     margin-left: 90vh;
     margin-bottom: 10vh;
     margin-top: -37vh;
-    padding-left: 1vh;
+    padding-left: 2vh;
     padding-top: 2.5vh;
-    display: flex;
+    display: flexbox;
 
 }
 .skillstack-title {
@@ -321,7 +321,7 @@ header {
 .skill-ai {
     border-radius: 1vh;
     border: 2px solid hsl(0, 0%, 33%);
-    width: 7vw;
+    width: 3.15vw;
     max-width: 7vw;
     padding-left: 12px;
     padding-top: 2px;

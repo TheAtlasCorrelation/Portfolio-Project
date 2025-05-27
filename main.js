@@ -3,7 +3,7 @@ document.querySelector(".hamburger").addEventListener("click", function () {
 });
 const hamburger = document.querySelector(".hamburger");
 const fullscreenNav = document.getElementById("myFullscreenNav");
-const closeButton = document.querySelector(".closebtn");
+const closeButton = document.querySelector(".x-button");
 
 hamburger.addEventListener("click", () => {
   fullscreenNav.style.width = "100%";
@@ -12,4 +12,3 @@ hamburger.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   fullscreenNav.style.width = "0%";
 });
-
