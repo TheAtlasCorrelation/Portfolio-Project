@@ -15,3 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.classList.remove("active");
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.getElementById("myFullscreenNav");
+  const closeBtn = nav.querySelector(".x-button");
+
+  closeBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    nav.style.display = "none";
+  });
+});
