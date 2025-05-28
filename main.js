@@ -12,3 +12,4 @@ hamburger.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   fullscreenNav.style.width = "0%";
 });
+

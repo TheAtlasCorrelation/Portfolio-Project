@@ -90,21 +90,42 @@
       <footer></footer>
     </main>
     <script src="./main.js"></script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const hamburger = document.querySelector(".hamburger");
         const fullscreenNav = document.getElementById("myFullscreenNav");
         const closeButton = document.querySelector(".x-button");
 
+        fullscreenNav.style.transform = "translateX(-100%)";
+        fullscreenNav.style.transition = "transform 1s ease-in-out";
+
         hamburger.addEventListener("click", function () {
           hamburger.classList.add("active");
           fullscreenNav.classList.add("active");
+          fullscreenNav.style.transform = "translateX(0)";
         });
 
-        closeButton.addEventListener("click", function () {
+        closeButton.addEventListener("click", function (event) {
+          event.preventDefault();
           hamburger.classList.remove("active");
+          fullscreenNav.style.transform = "translateX(-100%)";
           fullscreenNav.classList.remove("active");
         });
+        fullscreenNav.addEventListener("click", function (event) {
+          if (event.target === fullscreenNav) {
+            closeNav();
+          }
+        });
+
+        function closeNav(event) {
+          event.preventDefault();
+          hamburger.classList.remove("active");
+          fullscreenNav.style.transform = "translateX(-100%)";
+          setTimeout(() => {
+            fullscreenNav.classList.remove("active");
+          }, 300);
+        }
       });
     </script>
   </body>
