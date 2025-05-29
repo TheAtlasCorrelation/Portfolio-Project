@@ -137,50 +137,81 @@ header {
     margin-bottom: -27.5vw;
 }
 
-.contact-button {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 0%);
-    font-size: 0.8rem;
-    border-radius: 5vh;
-    text-decoration: none;
-    list-style-type: none;
+.projects-button {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-family: "Gothic A1", sans-serif;
+    color: #fff;
+    background: linear-gradient(90deg, hsl(120, 50%, 50%) 0%, hsl(110 60%, 40%) 100%);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
     height: 3.5vw;
-    width: 10.4vw;
-    padding-left: 2.8vw;
-    padding-right: 2vh;
-    margin-bottom: -3.4vw;
+    width: 12rem;
+    padding-left: 2rem;
+    padding-right: 1.6vh;
+    margin-bottom: -2.55vw;
     padding-bottom: -1vw;
-    padding-top: 1.2vw;
+    padding-top: 1vw;
+    margin-top: -3vw;
+    margin-left: 15vh;
 }
 
-.contact-button:hover {
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 90%);
-
-
+.projects-button::after {
+    content: "";
+    position: absolute;
+    left: -75%;
+    top: 0;
+    width: 1275%;
+    height: 100%;
+    transform: skewX(-20deg);
 }
 
 .projects-button:hover {
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 90%);
+    transform: translateY(-4px) scale(1.04);
 }
 
-.projects-button {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 0%);
-    font-size: 0.8rem;
-    border-radius: 5vh;
-    text-decoration: none;
-    list-style-type: none;
+.projects:hover::after {
+    left: 110%;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-family: "Gothic A1", sans-serif;
+    color: #fff;
+    background: linear-gradient(90deg, hsl(120, 50%, 50%) 0%, hsl(110 60%, 40%) 100%);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
     height: 3.5vw;
-    width: 12rem;
-    padding-left: 2.8rem;
+    width: 10.2rem;
+    padding-left: 2rem;
     padding-right: 1.6vh;
-    margin-bottom: -3.4vw;
+    margin-bottom: -2.55vw;
     padding-bottom: -1vw;
-    padding-top: 1.2vw;
-    margin-top: -1vw;
-    margin-left: 30vh;
+    padding-top: 1vw;
+    margin-top: -3vw;
+    margin-left: -1vh;
+}
+
+.contact-button::after {
+    content: "";
+    position: absolute;
+    left: -75%;
+    top: 0;
+    width: 1275%;
+    height: 100%;
+}
+
+.contact-button:hover {
+    transform: translateY(-4px) scale(1.04);
 }
 
 .about-section-title {
