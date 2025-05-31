@@ -174,12 +174,9 @@ header {
 }
 
 .projects-button:hover {
-    transform: translateY(-4px) scale(1.04);
+    transform: scale(1.04);
 }
 
-.projects:hover::after {
-    left: 110%;
-}
 
 .contact-button {
     display: inline-block;
@@ -214,7 +211,7 @@ header {
 }
 
 .contact-button:hover {
-    transform: translateY(-4px) scale(1.04);
+    transform: scale(1.04);
 }
 
 .about-section-title {
