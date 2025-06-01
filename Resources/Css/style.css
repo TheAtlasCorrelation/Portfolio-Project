@@ -137,7 +137,7 @@ header {
 .header-image {
     width: 33.33vw;
     height: 100vh;
-    margin-left: 100vh;
+    margin-left: 99.8vh;
     margin-top: -32.6vh;
     margin-bottom: -27.5vw;
 }
@@ -223,10 +223,11 @@ header {
     width: 33vw;
     margin-left: -50vh;
     margin-top: -70vh;
+    height: 100vh;
 }
 .about-section {
     margin-bottom: -70vw;
-    margin-top: 10vh;
+    margin-top: 8vh;
     margin-left: 50vh;
 }
 .about-section-title {
@@ -251,14 +252,14 @@ header {
 }
 
 .about-short-description {
-    margin-left: 27vh;
+    margin-left: 38.8vh;
     margin-bottom: 10vh;
 }
 
 .about-background {
     border-radius: 1vh;
-    border: 3px solid hsl(0, 0%, 33%);
-    width: 76vh;
+    border: 2px solid hsl(0, 0%, 33%);
+    width: 72vh;
     height: 27vh;
     margin-left: 23vh;
     margin-bottom: 10vh;
@@ -274,7 +275,7 @@ header {
 
 .about-background-paragraph {
 
-    width: 60vh;
+    width: 63vh;
     padding-left: 2vh;
     height: 20vh;
     margin-left: 1vh;
@@ -309,18 +310,18 @@ header {
 
 .skill-python {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
+    border: 1px solid hsl(0, 0%, 33%);
     width: 5.8rem;
     height: 2vw;
     padding-left: 12px;
     padding-top: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: -5px;
 }
 
 .skill-javascript {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
+    border: 1px solid hsl(0, 0%, 33%);
     width: 8.15vw;
     padding-left: 12px;
     padding-top: 2px;
@@ -330,47 +331,47 @@ header {
 
 .skill-html {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
+    border: 1px solid hsl(0, 0%, 33%);
     width: 4.7rem;
     padding-left: 12px;
     padding-top: 2px;
     padding-right: 2px;
     margin-left: 7rem;
-    margin-top: -4.35rem;
-    margin-bottom: 0.3rem;
+    margin-top: -4.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .skill-css {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
+    border: 1px solid hsl(0, 0%, 33%);
     width: 4vw;
     padding-left: 12px;
     padding-top: 2px;
     margin-left: 9rem;
-    margin-bottom: -0.3rem;
+    margin-bottom: -1rem;
 }
 
 .skill-blender {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
+    border: 1px solid hsl(0, 0%, 33%);
     width: 6.5vw;
     padding-left: 12px;
     padding-top: 2px;
     padding-right: 4px;
     margin-left: 13rem;
-    margin-top: -4rem;
-    margin-bottom: 0.3rem;
+    margin-top: -3.85rem;
+    margin-bottom: 0.4rem;
 }
 
 .skill-ai {
     border-radius: 1vh;
-    border: 2px solid hsl(0, 0%, 33%);
+    border: 1px solid hsl(0, 0%, 33%);
     width: 3.15vw;
     max-width: 7vw;
     padding-left: 12px;
     padding-top: 2px;
     margin-left: 14rem;
-    margin-bottom: -0.5rem;
+    margin-bottom: -1rem;
 
 }
 
