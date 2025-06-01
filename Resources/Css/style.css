@@ -225,11 +225,13 @@ header {
     margin-top: -70vh;
     height: 100vh;
 }
+
 .about-section {
     margin-bottom: -70vw;
     margin-top: 8vh;
     margin-left: 50vh;
 }
+
 .about-section-title {
     font-family: "Gothic A1", sans-serif;
     font-weight: 900;
