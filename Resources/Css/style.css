@@ -215,19 +215,19 @@ header {
     transform: scale(1.04);
 }
 
-.works-section {
+.projects-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
-.works-title {
+.projects-title {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.works-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -235,13 +235,13 @@ header {
     max-width: 1200px;
 }
 
-.work-item {
+.projects-item {
     border: 2px solid #868686;
     padding: 15px;
     text-align: center;
 }
 
-.work-item img {
+.projects-item img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
