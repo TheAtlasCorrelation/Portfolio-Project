@@ -215,49 +215,15 @@ header {
     transform: scale(1.04);
 }
 
-.projects-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.projects-title {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.projects-item {
-    border: 2px solid #868686;
-    padding: 15px;
-    text-align: center;
-}
-
-.projects-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-
 .about-image {
     width: 33vw;
     margin-left: -49.95008vh;
-    margin-top: -80vh;
-    height: 99.98vh;
+    margin-top: -87.85vh;
+    height: 99.95vh;
 }
 
 .about-section {
-    margin-bottom: -110vw;
-    margin-top: 40vh;
+    margin-top: 65vh;
     margin-left: 50vh;
 }
 
@@ -406,6 +372,126 @@ header {
 
 }
 
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 5rem;
+}
+
+.projects-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.projects-item {
+    border: 2px solid #868686;
+    padding: 15px;
+    text-align: center;
+}
+
+.projects-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #dad7cd;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #344e41;
+    transition: color 0.3s ease;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 12px;
+    border: 2px solid #344e41;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #344e41;
+    background-color: #f0ead6;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #588157;
+    background-color: #fff;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #344e41;
+    color: #dad7cd;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease,
+        box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(52, 78, 65, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.2));
+    transition: left 0.4s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #588157;
+    color: #f0ead6;
+    box-shadow: 0 4px 8px rgba(88, 129, 87, 0.4);
+}
+
+.contact-form button:hover::before {
+    left: 0;
+}
+
+.contact-form button:active {
+    background-color: #344e41;
+    box-shadow: 0 2px 4px rgba(52, 78, 65, 0.4);
+}
 
 h1 {
     position: relative;
@@ -420,4 +506,46 @@ h2 {
 
 h3 {
     font-size: 1.25rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+    height: 21vh;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-sitemap ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap {
+    color: rgb(170, 170, 170);
+}
+
+.contact {
+    color: rgb(170, 170, 170);
+}
+
+.footer-sitemap li {
+    margin-bottom: 5px;
+}
+
+.footer-sitemap a,
+.footer-contact p {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    color: rgb(255, 255, 255);
 }

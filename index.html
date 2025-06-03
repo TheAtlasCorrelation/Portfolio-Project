@@ -21,6 +21,7 @@
     />
     <style>
 
+
     </style>
   </head>
   <body>
@@ -57,21 +58,6 @@
         <div class="projects-button">View my projects</div>
       </a>
     </header>
-    <section class="projects-section">
-      <h2 class="projects-title">My Recent Projects</h2>
-      <div class="projects-grid">
-        <div class="projects-item">
-          <img src="./Resources/Images/Image-1.png" alt="Projects 1" />
-          <h3>Web Design System</h3>
-          <p>A web design style guide featuring typography, colour and buttons.</p>
-        </div>
-        <div class="projects-item">
-          <img src="./Resources/Images/Image-3.png" alt="Projects 2" />
-          <h3>Delta Strings</h3>
-          <p>A harmonious string quartet which will play for any occasion.</p>
-        </div>
-      </div>
-    </section>
     <main>
       <section class="about-section">
         <h3 class="about-section-title">About</h3>
@@ -103,8 +89,76 @@
         </div>
         <img class="about-image" src="./Resources/Images/Teen about.png" />
       </section>
+      <section class="projects-section">
+        <h2 class="projects-title">My Recent Projects</h2>
+        <div class="projects-grid">
+          <div class="projects-item">
+            <img src="./Resources/Images/Image-1.png" alt="Projects 1" />
+            <h3>Web Design System</h3>
+            <p>
+              A web design style guide featuring typography, colour and buttons.
+            </p>
+          </div>
+          <div class="projects-item">
+            <img src="./Resources/Images/Image-3.png" alt="Projects 2" />
+            <h3>Delta Strings</h3>
+            <p>A harmonious string quartet which will play for any occasion.</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-form">
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Enter your name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e.g Delta Strings"
+            required
+          />
+
+          <label for="email">Plus your email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="deltastrings@gmail.com"
+            required
+          />
+
+          <label for="message">How can I be of service?</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Input your message here"
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-sitemap">
+          <h3 class="sitemap">Sitemap</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3 class="contact">Contact</h3>
+          <p>Email: example@example.com</p>
+          <p>Phone: 123-456-7890</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright">&copy; 2023 My Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
     <script src="./main.js"></script>
   </body>
 </html>
