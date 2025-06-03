@@ -12,3 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    const submitButton = event.submitter;
+    submitButton.textContent = "Submitted!";
+    submitButton.classList.add("submitted");
+
+    document.getElementById("contactForm").reset();
+  });

@@ -21,7 +21,6 @@
     />
     <style>
 
-
     </style>
   </head>
   <body>
@@ -108,7 +107,7 @@
       </section>
       <section class="contact-form">
         <h2>Contact Me</h2>
-        <form>
+        <form id="contactForm">
           <label for="name">Enter your name:</label>
           <input
             type="text"
@@ -159,6 +158,23 @@
         <p class="copyright">&copy; 2023 My Portfolio. All rights reserved.</p>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        let submitted = false;
+
+        form.addEventListener("submit", function (event) {
+          if (submitted) {
+            event.preventDefault();
+            alert("This form has already been submitted.");
+          } else {
+            submitted = true;
+            form.classList.add("submitted");
+          }
+        });
+      });
+    </script>
     <script src="./main.js"></script>
   </body>
 </html>

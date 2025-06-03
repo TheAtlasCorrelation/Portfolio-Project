@@ -459,7 +459,7 @@ header {
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s ease, color 0.3s ease,
-        box-shadow 0.3s ease;
+    box-shadow 0.3s ease;
     box-shadow: 0 2px 5px rgba(52, 78, 65, 0.2);
     position: relative;
     overflow: hidden;
@@ -473,8 +473,8 @@ header {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg,
-            rgba(255, 255, 255, 0),
-            rgba(255, 255, 255, 0.2));
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2));
     transition: left 0.4s ease-in-out;
 }
 
@@ -491,6 +491,52 @@ header {
 .contact-form button:active {
     background-color: #344e41;
     box-shadow: 0 2px 4px rgba(52, 78, 65, 0.4);
+}
+
+.submitted {
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+#contactForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Gothic A1", sans-serif;
+    color: #333;
+}
+
+#contactForm textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contactForm button {
+    background-color: #8bd061;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contactForm button:hover {
+    background-color: #62a04f;
 }
 
 h1 {
