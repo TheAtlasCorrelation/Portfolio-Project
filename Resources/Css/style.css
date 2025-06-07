@@ -172,7 +172,8 @@ header {
 .works-section {
     text-align: center;
     padding: 50px 20px;
-    margin-top: -2rem;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
 }
 
 .works-title {
@@ -241,7 +242,7 @@ header {
 }
 
 .about-section {
-    margin-top: 65vh;
+    margin-top: 50vh;
     margin-left: 50vh;
 }
 
