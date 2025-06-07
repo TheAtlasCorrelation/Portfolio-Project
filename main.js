@@ -22,3 +22,17 @@ document
 
     document.getElementById("contactForm").reset();
   });
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+  let submitted = false;
+
+  form.addEventListener("submit", function (event) {
+    if (submitted) {
+      event.preventDefault();
+      alert("This form has already been submitted.");
+    } else {
+      submitted = true;
+      form.classList.add("submitted");
+    }
+  });
+});

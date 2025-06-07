@@ -1,3 +1,4 @@
+/* General Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,23 +10,26 @@
 
 body {
     background: linear-gradient(to bottom, hsl(100, 100%, 92%), hsl(100, 100%, 90%), hsl(100, 100%, 92%));
+    line-height: 1.6;
+    /* Improve text readability */
 }
 
+/* Navigation */
 .fullscreen-nav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
+    /* Ensure it's above other content */
     top: 0;
     left: 0;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     overflow-x: hidden;
-    transition: 1s;
+    transition: 0.5s;
+    /* Reduced transition for snappier feel */
     margin-top: -1.1rem;
 }
-
-
 
 .fullscreen-nav .nav-links {
     position: fixed;
@@ -34,8 +38,6 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 0;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
 }
 
 .fullscreen-nav .nav-links a {
@@ -45,7 +47,6 @@ body {
     display: block;
     transition: 0.3s;
     color: rgb(0, 0, 0);
-
 }
 
 .fullscreen-nav .nav-links a:hover,
@@ -53,27 +54,20 @@ body {
     color: #4e4e4e;
 }
 
-.fullscreen-nav {
-    top: 17.5px;
-    right: 30px;
-    font-size: 50px;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-
-}
-
+/* Hamburger Menu */
 .hamburger {
     cursor: pointer;
     width: 35px;
     height: 30px;
     display: flex;
-    margin-left: 77rem;
-    margin-top: -14.5rem;
     flex-direction: column;
     justify-content: space-between;
     z-index: 1001;
     position: fixed;
+    top: 1rem;
+    /* Adjust position */
+    right: 1rem;
+    /* Adjust position */
     color: hsl(0, 0%, 18%);
 }
 
@@ -98,16 +92,7 @@ body {
     width: 38px;
 }
 
-@media screen and (max-height: 450px) {
-    .fullscreen-nav .nav-links {
-        top: 10%;
-    }
-
-    .fullscreen-nav .nav-links li {
-        font-size: 20px;
-    }
-}
-
+/* Header Section */
 header {
     padding: 20px 0;
     margin-left: 30vh;
@@ -124,13 +109,16 @@ header {
     margin-left: -10vw;
     width: 60vw;
     margin-top: -10vh;
+    line-height: 1.1;
+    /* Improve readability of the title */
 }
 
 .header-subtitle {
     margin-bottom: 3vw;
     font-size: 3.5vh;
     margin-left: -10vw;
-
+    color: #555;
+    /* Slightly muted color for subtitle */
 }
 
 .header-image {
@@ -141,13 +129,15 @@ header {
     margin-bottom: -30.5vw;
 }
 
-.projects-button {
+/* Buttons */
+.projects-button,
+.contact-button {
     display: inline-block;
     padding: 14px 32px;
     font-size: 1.1rem;
     font-family: "Gothic A1", sans-serif;
     color: #fff;
-    background: linear-gradient(200deg, hsl(90, 100%, 65%) 0%, hsl(120, 100%, 20%) 100%);
+    background: linear-gradient(180deg, hsl(90, 100%, 40%) 0%, hsl(90, 100%, 45%) 50%, hsl(90, 100%, 40%) 100%);
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -159,62 +149,26 @@ header {
     padding-right: 1.6vh;
     margin-bottom: -2.55vw;
     padding-bottom: -1vw;
-    padding-top: 1vw;
     margin-top: -3vw;
+    transition: background 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.projects-button {
     margin-left: 15vh;
 }
 
-.projects-button::after {
-    content: "";
-    position: absolute;
-    left: -75%;
-    top: 0;
-    width: 1275%;
-    height: 100%;
-    transform: skewX(-20deg);
-}
-
-.projects-button:hover {
-    transform: scale(1.04);
-}
-
-
 .contact-button {
-    display: inline-block;
-    padding: 14px 32px;
-    font-size: 1.1rem;
-    font-family: "Gothic A1", sans-serif;
-    color: #fff;
-    background: linear-gradient(160deg, hsl(90, 100%, 65%) 0%, hsl(120, 100%, 20%) 100%);
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    height: 3.5vw;
     width: 10.2rem;
-    padding-left: 2rem;
-    padding-right: 1.6vh;
-    margin-bottom: -2.55vw;
-    padding-bottom: -1vw;
-    padding-top: 1vw;
-    margin-top: -3vw;
     margin-left: -1vh;
 }
 
-.contact-button::after {
-    content: "";
-    position: absolute;
-    left: -75%;
-    top: 0;
-    width: 1275%;
-    height: 100%;
-}
-
+.projects-button:hover,
 .contact-button:hover {
-    transform: scale(1.04);
+    background: linear-gradient(180deg, hsl(90, 100%, 42%) 0%, hsl(90, 100%, 47%) 50%, hsl(90, 100%, 42%) 100%);
 }
 
+/* Works Section */
 .works-section {
     text-align: center;
     padding: 50px 20px;
@@ -253,6 +207,12 @@ header {
     height: 200px;
     object-fit: cover;
     display: block;
+    transition: opacity 0.3s ease;
+    /* Image fade-in on load */
+}
+
+.works-item img:hover {
+    opacity: 0.8;
 }
 
 .works-item h3 {
@@ -272,6 +232,7 @@ header {
     line-height: 1.6;
 }
 
+/* About Section */
 .about-image {
     width: 33vw;
     margin-left: -49.95008vh;
@@ -291,9 +252,9 @@ header {
     margin-bottom: 4vh;
     border: rgb(120, 120, 120) 2px solid;
     border-radius: 2.5vh;
-    width: 5vw;
-    padding-left: 2vh;
-    padding-right: 4.6vw;
+    width: 9vw;
+    padding-left: 0.5vh;
+    padding-right: 0.3vh;
     margin-left: 40vw;
     padding-top: 0.2vh;
     padding-bottom: 0.2vh;
@@ -308,6 +269,8 @@ header {
 .about-short-description {
     margin-left: 38.8vh;
     margin-bottom: 10vh;
+    color: #666;
+    /* Improve readability */
 }
 
 .about-background {
@@ -319,6 +282,7 @@ header {
     margin-bottom: 10vh;
     padding-left: 1vh;
     padding-top: 2.5vh;
+    padding-bottom: 1rem;
 }
 
 .about-background-title {
@@ -328,7 +292,6 @@ header {
 }
 
 .about-background-paragraph {
-
     width: 63vh;
     padding-left: 2vh;
     height: 20vh;
@@ -336,8 +299,11 @@ header {
     margin-bottom: -10vh;
     margin-top: -4.25vh;
     padding-top: 2.5vh;
+    color: #555;
+    /* Improve readability */
 }
 
+/* Skill Stack Section */
 .about-skillstack {
     border-radius: 1vh;
     border: 2px solid hsl(0, 0%, 33%);
@@ -349,7 +315,6 @@ header {
     padding-left: 2vh;
     padding-top: 2.5vh;
     display: flexbox;
-
 }
 
 .skillstack-title {
@@ -362,73 +327,61 @@ header {
     gap: 1vh;
 }
 
-.skill-python {
+.skill-python,
+.skill-javascript,
+.skill-html,
+.skill-css,
+.skill-blender,
+.skill-ai {
     border-radius: 1vh;
     border: 1px solid hsl(0, 0%, 33%);
-    width: 5.8rem;
-    height: 2vw;
     padding-left: 12px;
     padding-top: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    /* Align skills horizontally */
+    margin-right: 5px;
+    /* Space between skills */
+}
+
+.skill-python {
+    width: 5.8rem;
+    height: 2vw;
     margin-top: -5px;
 }
 
 .skill-javascript {
-    border-radius: 1vh;
-    border: 1px solid hsl(0, 0%, 33%);
     width: 8.15vw;
-    padding-left: 12px;
-    padding-top: 2px;
-    margin-bottom: 5px;
-
 }
 
 .skill-html {
-    border-radius: 1vh;
-    border: 1px solid hsl(0, 0%, 33%);
     width: 4.7rem;
-    padding-left: 12px;
-    padding-top: 2px;
     padding-right: 2px;
-    margin-left: 7rem;
-    margin-top: -4.5rem;
-    margin-bottom: 0.4rem;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .skill-css {
-    border-radius: 1vh;
-    border: 1px solid hsl(0, 0%, 33%);
     width: 4vw;
-    padding-left: 12px;
-    padding-top: 2px;
-    margin-left: 9rem;
-    margin-bottom: -1rem;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 .skill-blender {
-    border-radius: 1vh;
-    border: 1px solid hsl(0, 0%, 33%);
     width: 6.5vw;
-    padding-left: 12px;
-    padding-top: 2px;
     padding-right: 4px;
-    margin-left: 13rem;
-    margin-top: -3.85rem;
-    margin-bottom: 0.4rem;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .skill-ai {
-    border-radius: 1vh;
-    border: 1px solid hsl(0, 0%, 33%);
     width: 3.15vw;
     max-width: 7vw;
-    padding-left: 12px;
-    padding-top: 2px;
-    margin-left: 14rem;
-    margin-bottom: -1rem;
-
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
+/* Projects Section */
 .projects-section {
     display: flex;
     flex-direction: column;
@@ -454,24 +407,27 @@ header {
     border: 2px solid #868686;
     padding: 15px;
     text-align: center;
+    transition: border-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.projects-item:hover {
+    border-color: #555;
 }
 
 .projects-item img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
 }
 
-@media (max-width: 768px) {
-    .works-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .works-item {
-        width: 100%;
-    }
+.projects-item:hover img {
+    transform: scale(1.05);
 }
 
+/* Contact Form */
 .contact-form {
     width: 80%;
     margin: 20px auto;
@@ -503,6 +459,8 @@ header {
     font-size: 16px;
     color: #344e41;
     background-color: #f0ead6;
+    transition: border-color 0.3s ease;
+    /* Smooth transition for focus effect */
 }
 
 .contact-form input[type="text"]:focus,
@@ -562,7 +520,7 @@ header {
 
 .submitted {
     color: white;
-    transform: scale(1.1);
+    transform: scale(1);
     transition: transform 0.3s ease;
 }
 
@@ -606,27 +564,38 @@ header {
     background-color: #62a04f;
 }
 
+/* Typography */
 h1 {
     position: relative;
     font-size: 5rem;
     font-family: "Gothic A1", sans-serif;
     font-weight: 900;
+    line-height: 1.2;
+    /* Improve readability */
 }
 
 h2 {
     font-size: 3rem;
+    color: #333;
+    /* Consistent heading color */
+    margin-bottom: 1rem;
 }
 
 h3 {
     font-size: 1.25rem;
+    color: #444;
+    /* Consistent subheading color */
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     font-size: 16px;
     height: 21vh;
+    line-height: 1.5;
+    /* Improve readability */
 }
 
 .footer-content {
@@ -652,9 +621,72 @@ footer {
 .footer-contact p {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.footer-sitemap a:hover {
+    color: #ddd;
 }
 
 .copyright {
     text-align: center;
     color: rgb(255, 255, 255);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .works-item {
+        width: 100%;
+    }
+
+    /* Adjust header layout for smaller screens */
+    header {
+        margin-left: 10vh;
+        margin-top: 20vh;
+        margin-bottom: 40vh;
+    }
+
+    .header-main-title {
+        font-size: 4rem;
+    }
+
+    .header-subtitle {
+        font-size: 2.5vh;
+    }
+
+    .header-image {
+        display: none;
+        /* Hide image on smaller screens */
+    }
+
+    /* Adjust about section layout */
+    .about-image {
+        display: none;
+        /* Hide image on smaller screens */
+    }
+
+    .about-section {
+        margin-left: 10vh;
+        margin-top: 40vh;
+    }
+
+    .about-skillstack {
+        margin-left: 10vh;
+        margin-top: 20vh;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .fullscreen-nav .nav-links {
+        top: 10%;
+    }
+
+    .fullscreen-nav .nav-links li {
+        font-size: 20px;
+    }
 }
