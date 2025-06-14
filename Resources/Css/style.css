@@ -663,6 +663,7 @@ footer {
     height: 21vh;
     line-height: 1.5;
     /* Improve readability */
+    margin-bottom: -2rem;
 }
 
 .footer-content {
