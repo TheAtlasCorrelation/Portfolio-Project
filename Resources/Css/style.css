@@ -99,7 +99,7 @@ header {
     font-weight: 900;
     margin-left: -16rem;
     width: 60vw;
-    margin-top: -8rem;
+    margin-top: -11rem;
     line-height: 1.1;
 }
 
@@ -474,11 +474,16 @@ header {
 }
 
 .contact-form {
-    width: 80%;
+    width: 50%;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
     background-color: #dad7cd;
+}
+
+.contact-header {
+    text-align: center;
 }
 
 .contact-form label,
@@ -491,7 +496,7 @@ header {
     transition: color 0.3s ease;
 }
 
-.contact-form label {
+.contact-form h3 {
     font-weight: bold;
 }
 
