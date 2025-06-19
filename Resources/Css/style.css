@@ -473,6 +473,16 @@ header {
     transform: scale(1.05);
 }
 
+.contact-form-1 {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #dad7cd;
+    margin-top: -60rem;
+}
+
 .contact-form {
     width: 50%;
     margin: 20px auto;

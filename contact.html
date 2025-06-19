@@ -8,15 +8,53 @@
   </head>
   <body>
     <header>
-      <nav lass="navbar">
-        <ul>
-          <h2>
-            <a class="nav-1">Home</a> | <a class="nav-2">About</a> |
-            <a class="nav-3">Projects</a> | <a class="nav-4">Contact us</a>
-          </h2>
-        </ul>
+      <nav class="navbar">
+        <div class="hamburger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="myFullscreenNav" class="fullscreen-nav">
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Me</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-    
+    <section class="contact-form-1">
+      <h2 class="contact-header">Contact Me</h2>
+      <form id="contactForm">
+        <h3 for="name">Enter your name</h3>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="e.g Delta Strings"
+          required
+        />
+
+        <h3 for="email">Plus your email</h3>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="deltastrings358@gmail.com"
+          required
+        />
+
+        <h3 for="message">How can I be of service?</h3>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Input your message here"
+          required
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   </body>
 </html>
