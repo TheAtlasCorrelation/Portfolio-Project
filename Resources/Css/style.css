@@ -335,9 +335,9 @@ header {
     border-radius: 1rem;
     border: 2px solid hsl(0, 0%, 33%);
     width: 35rem;
-    height: 20.25rem;
+    height: 17.25rem;
     margin-left: -3rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 10.5rem;
     padding-left: 1rem;
     padding-top: 1.875rem;
     padding-bottom: 1rem;
@@ -347,13 +347,14 @@ header {
     font-size: 2rem;
     margin-bottom: 1.875rem;
     font-weight: 900;
+    margin-left: 1rem;
 }
 
 .about-background-paragraph {
     width: 47.25rem;
     padding-left: 2rem;
     height: 15rem;
-    margin-left: 1rem;
+    margin-left: -0.8rem;
     margin-bottom: -7.5rem;
     margin-top: -3.19rem;
     padding-top: 1.875rem;
@@ -435,12 +436,22 @@ header {
     margin-bottom: 0;
 }
 
+.projects-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
 .projects-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     margin-top: 5rem;
+    margin-bottom: 1rem;
 }
 
 .projects-title {
