@@ -94,7 +94,7 @@ header {
 }
 
 .header-main-title {
-    font-size: 5.5rem;
+    font-size: 7rem;
     font-family: "Gothic A1", sans-serif;
     font-weight: 900;
     margin-left: -16rem;
@@ -104,9 +104,9 @@ header {
 }
 
 .header-subtitle {
-    margin-bottom: 3rem;
+    margin-top: 3rem;
     font-size: 1.25rem;
-    margin-left: -13.8rem;
+    margin-left: -15.5rem;
     color: #555;
 }
 
@@ -137,17 +137,18 @@ header {
     padding-right: 1.6rem;
     margin-bottom: -1.91rem;
     padding-bottom: 2.5rem;
-    margin-top: -2.25rem;
+    margin-top: 4.2rem;
+    margin-left: -5rem;
     transition: background 0.3s ease;
 }
 
 .projects-button {
-    margin-left: 4.12rem;
+    margin-left: 2.12rem;
 }
 
 .contact-button {
     width: 10.2rem;
-    margin-left: -11.9rem;
+    margin-left: -15rem;
 }
 
 .projects-button:hover,
@@ -297,6 +298,7 @@ header {
 .about-section-1 {
     margin-left: 37.5rem;
     margin-top: -59.3rem;
+    margin-bottom: 2rem;
 }
 
 .about-section {
@@ -663,11 +665,19 @@ footer {
     color: #fff;
     padding: 20px;
     font-size: 16px;
+    height: 11.75rem;
+    line-height: 1.5;
+    margin-bottom: -2rem;
+}
+.footer-1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
     height: 9.75rem;
     line-height: 1.5;
     margin-bottom: -2rem;
 }
-
 .footer-content {
     display: flex;
     justify-content: space-around;
