@@ -669,6 +669,7 @@ footer {
     line-height: 1.5;
     margin-bottom: -2rem;
 }
+
 .footer-1 {
     background-color: #333;
     color: #fff;
@@ -678,6 +679,7 @@ footer {
     line-height: 1.5;
     margin-bottom: -2rem;
 }
+
 .footer-content {
     display: flex;
     justify-content: space-around;
@@ -713,54 +715,189 @@ footer {
     color: rgb(255, 255, 255);
 }
 
-@media (max-width: 768px) {
-    .works-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .works-item {
-        width: 100%;
-    }
-
-    header {
-        margin-left: 7.5rem;
-        margin-top: 15rem;
-        margin-bottom: 30rem;
-    }
-
+/* Responsive adjustments for general classes and sections */
+@media (max-width: 1200px) {
     .header-main-title {
-        font-size: 4rem;
+        font-size: 5rem;
+        width: 80vw;
+        margin-left: -8rem;
+    }
+
+    .header-image {
+        width: 50vw;
+        margin-left: 20rem;
+    }
+
+    .about-section,
+    .about-section-1 {
+        margin-left: 10vw;
+    }
+
+    .about-background,
+    .about-background-paragraph,
+    .about-skillstack {
+        width: 90vw;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-main-title {
+        font-size: 3.5rem;
+        margin-left: 0;
+        width: 90vw;
     }
 
     .header-subtitle {
-        font-size: 1.875rem;
+        margin-left: 0;
+        font-size: 1.1rem;
     }
 
     .header-image {
         display: none;
     }
 
+    .about-section,
+    .about-section-1 {
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+
     .about-image {
         display: none;
     }
 
-    .about-section {
-        margin-left: 7.5rem;
-        margin-top: 30rem;
+    .about-background,
+    .about-background-paragraph,
+    .about-skillstack {
+        width: 95vw;
+        margin-left: 0;
     }
 
     .about-skillstack {
-        margin-left: 7.5rem;
-        margin-top: 15rem;
+        margin-top: 2rem;
+    }
+
+    .works-section {
+        margin-top: 3rem;
+        margin-bottom: 0;
+        padding: 30px 5px;
+    }
+
+    .projects-section,
+    .projects-section-1 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 10px;
     }
 }
 
-@media screen and (max-height: 450px) {
-    .fullscreen-nav .nav-links {
-        top: 10%;
+@media (max-width: 600px) {
+    * {
+        font-size: 14px;
     }
 
-    .fullscreen-nav .nav-links li {
-        font-size: 20px;
+    header {
+        margin-left: 0;
+        margin-top: 6rem;
+        margin-bottom: 10rem;
+        padding: 10px 0;
+    }
+
+    .header-main-title {
+        font-size: 2.2rem;
+        margin-left: 0;
+        width: 100vw;
+        margin-top: 0;
+    }
+
+    .header-subtitle {
+        font-size: 1rem;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .projects-button,
+    .contact-button {
+        width: 90vw;
+        margin-left: 0;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+
+    .works-section {
+        padding: 10px 2px;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .works-title {
+        font-size: 1.5em;
+    }
+
+    .about-section,
+    .about-section-1 {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .about-section-title {
+        width: 60vw;
+        margin-left: 0;
+        font-size: 1.2rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+
+    .about-background,
+    .about-background-paragraph,
+    .about-skillstack {
+        width: 98vw;
+        margin-left: 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .about-background-title {
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+    }
+
+    .about-short-description {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer,
+    .footer-1 {
+        font-size: 13px;
+        padding: 10px;
+        height: auto;
+    }
+
+    .contact-form,
+    .contact-form-1 {
+        width: 95vw;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-main-title {
+        font-size: 1.3rem;
+    }
+
+    .works-title,
+    .projects-title {
+        font-size: 1.1rem;
+    }
+
+    .about-section-title {
+        font-size: 1rem;
     }
 }
